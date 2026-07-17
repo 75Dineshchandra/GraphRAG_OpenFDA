@@ -1,0 +1,8 @@
+networkx>=3.2
+numpy>=1.26
+requests>=2.32
+tqdm>=4.66
+faiss-cpu>=1.13
+ollama>=0.6.2
+notebook>=7.0
+jupyterlab>=4.0
