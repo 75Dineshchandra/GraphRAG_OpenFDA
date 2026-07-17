@@ -14,34 +14,11 @@ they're distributed via Google Drive:
 
 https://drive.google.com/drive/folders/1C0KmSjRvNmOW-PvxzUiedcediCZHdZAl?usp=sharing
 
-
-## Flowchart
-
-OpenFDA knowledge graph
-    NetworkX, ~110k nodes
-        |
-        v
-Node embedding
-    nomic-embed-text via Ollama
-        |
-        v
-FAISS vector index
-    IndexFlatIP, cosine similarity
-        |
-        v
-Retrieval and graph traversal
-    Resolve matches to drug_generic
-        |
-        v
-Prompt assembly
-    FDA label sections as context
-        |
-        v
-Answer generation
-    Llama-3 via Ollama
 ---
 
 ## How it works
+
+![GraphRAG OpenFDA architecture](architecture.svg)
 
 ### 1. Graph schema
 
