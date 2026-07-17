@@ -49,11 +49,11 @@ The workflow expects the following files to be present in the project data folde
 
 If these files are missing, download them from the Google Drive link above and place them into the data folder used by the project.
 
-For viewers who are following the Colab workflow, the notebook environment already includes the necessary runtime context; they only need to download the data files and run the notebook cells.
+For viewers who are following the Colab workflow, the notebook environment already includes the necessary runtime context; they only need to download the data files and run the notebook cells from top to bottom and ask your question at the end.
 
 ---
 
-## Software requirements
+## Software requirements to run on local env
 
 ### Python
 Use Python 3.9 or newer.
