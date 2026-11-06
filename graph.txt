@@ -1,0 +1,1052 @@
+Nodes: 110843
+Edges: 355909
+Directed: False
+Multigraph: False
+
+--- Sample nodes ---
+Node ID: 'DRUG_GENERIC:6e49f2b49e93d317'
+  Attributes: {'id': 'DRUG_GENERIC:6e49f2b49e93d317', 'name': 'LIDOCAINE', 'type': 'drug_generic', 'source': 'FDA_tool_list', 'description': '', 'source_db': '', 'retrieval_date': '', 'embedding': None}
+Node ID: 'DRUG_GENERIC:293e95c8a06eaa59'
+  Attributes: {'id': 'DRUG_GENERIC:293e95c8a06eaa59', 'name': 'SALICYLIC ACID', 'type': 'drug_generic', 'source': 'FDA_tool_list', 'description': '', 'source_db': '', 'retrieval_date': '', 'embedding': None}
+Node ID: 'DRUG_GENERIC:f775126c48cf5596'
+  Attributes: {'id': 'DRUG_GENERIC:f775126c48cf5596', 'name': 'VIBEGRON', 'type': 'drug_generic', 'source': 'FDA_tool_list', 'description': '', 'source_db': '', 'retrieval_date': '', 'embedding': None}
+Node ID: 'DRUG_GENERIC:3840b059b5d2f0a2'
+  Attributes: {'id': 'DRUG_GENERIC:3840b059b5d2f0a2', 'name': 'BENZALKONIUM CHLORIDE, LIDOCAINE', 'type': 'drug_generic', 'source': 'FDA_tool_list', 'description': '', 'source_db': '', 'retrieval_date': '', 'embedding': None}
+Node ID: 'DRUG_GENERIC:2bfe6d0f85108cc8'
+  Attributes: {'id': 'DRUG_GENERIC:2bfe6d0f85108cc8', 'name': 'BENZALKONIUM CHLORIDE', 'type': 'drug_generic', 'source': 'FDA_tool_list', 'description': '', 'source_db': '', 'retrieval_date': '', 'embedding': None}
+
+--- Sample edges ---
+Edge: 'DRUG_GENERIC:6e49f2b49e93d317' -> 'DRUG_BRAND:67d8adeea168ef45'
+  Attributes: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Sonacaine Topical Anesthetic With Menthol' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+Edge: 'DRUG_GENERIC:6e49f2b49e93d317' -> 'DRUG_BRAND:ce674a04d7dfa0ba'
+  Attributes: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Salonpas Pain Relieving LIDOCAINE 4% FLEX' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+Edge: 'DRUG_GENERIC:6e49f2b49e93d317' -> 'DRUG_BRAND:78e7939ef3b91fed'
+  Attributes: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'DYNAMO DELAY' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+Edge: 'DRUG_GENERIC:6e49f2b49e93d317' -> 'DRUG_BRAND:71fac0a7d208b672'
+  Attributes: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine 5%' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+Edge: 'DRUG_GENERIC:6e49f2b49e93d317' -> 'DRUG_BRAND:9d8d09173bdfe072'
+  Attributes: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'EPIC Burn Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+
+--- Node attribute keys (with frequency) ---
+  id: appears on 110843/110843 nodes
+  name: appears on 110843/110843 nodes
+  type: appears on 110843/110843 nodes
+  source: appears on 110843/110843 nodes
+  description: appears on 110843/110843 nodes
+  source_db: appears on 110843/110843 nodes
+  retrieval_date: appears on 110843/110843 nodes
+  embedding: appears on 106449/110843 nodes
+
+--- Edge attribute keys (with frequency) ---
+  relation: appears on 355909/355909 edges
+  weight: appears on 355909/355909 edges
+  source_db: appears on 355909/355909 edges
+  evidence: appears on 355909/355909 edges
+  retrieval_date: appears on 355909/355909 edges
+
+--- Node 'type' distribution ---
+  drug_brand: 31797
+  drug_generic: 10840
+  dosage_and_administration: 9443
+  indications_and_usage: 9442
+  warnings: 7590
+  inactive_ingredient: 7107
+  active_ingredient: 7008
+  keep_out_of_reach_of_children: 6985
+  purpose: 6871
+  stop_use: 2814
+  storage_and_handling: 2688
+  pregnancy_or_breast_feeding: 2388
+  do_not_use: 2082
+  ask_doctor: 1585
+  dosage_and_administration_table: 1454
+  ask_doctor_or_pharmacist: 749
+
+--- Edge 'relation' distribution ---
+  BRAND_GENERIC: 34877
+  HAS_DOSAGE: 9443
+  HAS_INDICATION_TEXT: 9442
+  DOSAGE_INDICATION: 9415
+  HAS_WARNING: 7590
+  INDICATION_WARNING: 7555
+  DOSAGE_WARNING: 7551
+  HAS_INACTIVE_INGREDIENT_TEXT: 7107
+  INACTIVE_INDICATION: 7086
+  DOSAGE_INACTIVE: 7081
+  HAS_ACTIVE_INGREDIENT_TEXT: 7008
+  ACTIVE_INACTIVE: 7006
+  ACTIVE_INDICATION: 6990
+  KEEP_OUT_OF_REACH: 6985
+  ACTIVE_DOSAGE: 6984
+  INACTIVE_KEEPCHILDREN: 6981
+  INDICATION_KEEPCHILDREN: 6970
+  DOSAGE_KEEPCHILDREN: 6961
+  INACTIVE_WARNING: 6924
+  ACTIVE_KEEPCHILDREN: 6912
+  HAS_PURPOSE: 6871
+  INACTIVE_PURPOSE: 6868
+  INDICATION_PURPOSE: 6855
+  DOSAGE_PURPOSE: 6850
+  ACTIVE_WARNING: 6835
+  PURPOSE_WARNING: 6827
+  KEEPCHILDREN_WARNING: 6813
+  KEEPCHILDREN_PURPOSE: 6808
+  ACTIVE_PURPOSE: 6802
+  STOP_USE: 2814
+  INACTIVE_STOPUSE: 2814
+  INDICATION_STOPUSE: 2808
+  KEEPCHILDREN_STOPUSE: 2808
+  DOSAGE_STOPUSE: 2805
+  ACTIVE_STOPUSE: 2795
+  HAS_STORAGE: 2688
+  DOSAGE_STORAGE: 2677
+  INDICATION_STORAGE: 2676
+  PURPOSE_STOPUSE: 2671
+  STOPUSE_WARNING: 2645
+  PREGNANCY_LACTATION: 2388
+  INACTIVE_PREGNANCY: 2388
+  DOSAGE_PREGNANCY: 2386
+  INDICATION_PREGNANCY: 2386
+  ACTIVE_PREGNANCY: 2385
+  KEEPCHILDREN_PREGNANCY: 2383
+  PREGNANCY_PURPOSE: 2239
+  PREGNANCY_WARNING: 2232
+  DO_NOT_USE: 2082
+  DONOTUSE_INACTIVE: 2082
+  DONOTUSE_INDICATION: 2078
+  DONOTUSE_DOSAGE: 2077
+  DONOTUSE_KEEPCHILDREN: 2074
+  ACTIVE_DONOTUSE: 2071
+  DONOTUSE_WARNING: 2071
+  DONOTUSE_PURPOSE: 2062
+  STORAGE_WARNING: 1994
+  INACTIVE_STORAGE: 1812
+  DONOTUSE_STOPUSE: 1796
+  PURPOSE_STORAGE: 1788
+  ACTIVE_STORAGE: 1787
+  KEEPCHILDREN_STORAGE: 1775
+  ASK_DOCTOR: 1585
+  ASKDOCTOR_INACTIVE: 1585
+  ASKDOCTOR_INDICATION: 1584
+  ASKDOCTOR_KEEPCHILDREN: 1582
+  ACTIVE_ASKDOCTOR: 1581
+  ASKDOCTOR_DOSAGE: 1581
+  ASKDOCTOR_PURPOSE: 1575
+  ASKDOCTOR_WARNING: 1568
+  PREGNANCY_STOPUSE: 1475
+  HAS_DOSAGE_TABLE: 1454
+  DOSAGE_DOSAGETABLE: 1454
+  DOSAGETABLE_INDICATION: 1452
+  ASKDOCTOR_STOPUSE: 1302
+  STOPUSE_STORAGE: 1104
+  ASKDOCTOR_DONOTUSE: 1090
+  ASKDOCTOR_PREGNANCY: 1038
+  PREGNANCY_STORAGE: 961
+  DONOTUSE_PREGNANCY: 942
+  DONOTUSE_STORAGE: 907
+  ASKDOCTOR_STORAGE: 778
+  ASK_PHARMACIST: 749
+  ASKPHARMACIST_INACTIVE: 749
+  ASKPHARMACIST_INDICATION: 749
+  ASKPHARMACIST_WARNING: 749
+  ASKPHARMACIST_DOSAGE: 747
+  ACTIVE_ASKPHARMACIST: 747
+  ASKPHARMACIST_KEEPCHILDREN: 745
+  ASKPHARMACIST_PURPOSE: 738
+  DOSAGETABLE_STORAGE: 703
+  ASKPHARMACIST_STOPUSE: 682
+  ASKDOCTOR_ASKPHARMACIST: 658
+  DOSAGETABLE_WARNING: 654
+  ASKPHARMACIST_PREGNANCY: 646
+  ASKPHARMACIST_DONOTUSE: 614
+  DOSAGETABLE_INACTIVE: 530
+  ACTIVE_DOSAGETABLE: 528
+  DOSAGETABLE_KEEPCHILDREN: 527
+  DOSAGETABLE_PURPOSE: 527
+  DOSAGETABLE_STOPUSE: 437
+  ASKPHARMACIST_STORAGE: 422
+  ASKDOCTOR_DOSAGETABLE: 414
+  DOSAGETABLE_PREGNANCY: 398
+  DONOTUSE_DOSAGETABLE: 375
+  ASKPHARMACIST_DOSAGETABLE: 289
+
+--- Degree stats ---
+  min: 1, max: 1422, avg: 6.42
+
+Types with null embedding: Counter({'drug_brand': 31797, 'drug_generic': 10840, 'dosage_and_administration': 9443, 'indications_and_usage': 9442, 'warnings': 7590, 'inactive_ingredient': 7107, 'active_ingredient': 7008, 'keep_out_of_reach_of_children': 6985, 'purpose': 6871, 'stop_use': 2814, 'storage_and_handling': 2688, 'pregnancy_or_breast_feeding': 2388, 'do_not_use': 2082, 'ask_doctor': 1585, 'dosage_and_administration_table': 1454, 'ask_doctor_or_pharmacist': 749})
+
+Sample indications_and_usage node:
+  name: 'indications_and_usage ((CALCIUM, MAGNESIUM, POTASSIUM, AND SODIUM OXYBATES))'
+  description: '1 INDICATIONS AND USAGE XYWAV is a central nervous system depressant indicated for the treatment of: • Cataplexy or excessive daytime sleepiness (EDS) in patients 7 years of age and older with narcolepsy ( 1.1 ). • Idiopathic Hypersomnia (IH) in adults ( 1.2 ). 1.1 Narcolepsy XYWAV is indicated for the treatment of cataplexy or excessive daytime sleepiness (EDS) in patients 7 years of age and older with narcolepsy. 1.2 Idiopathic Hypersomnia XYWAV is indicated for the treatment of idiopathic hypersomnia (IH) in adults.'
+
+Sample warnings node:
+  name: 'warnings ((SALINE))'
+
+--- Edge type distribution ---
+  BRAND_GENERIC: 34877
+  HAS_DOSAGE: 9443
+  HAS_INDICATION_TEXT: 9442
+  DOSAGE_INDICATION: 9415
+  HAS_WARNING: 7590
+  INDICATION_WARNING: 7555
+  DOSAGE_WARNING: 7551
+  HAS_INACTIVE_INGREDIENT_TEXT: 7107
+  INACTIVE_INDICATION: 7086
+  DOSAGE_INACTIVE: 7081
+  HAS_ACTIVE_INGREDIENT_TEXT: 7008
+  ACTIVE_INACTIVE: 7006
+  ACTIVE_INDICATION: 6990
+  KEEP_OUT_OF_REACH: 6985
+  ACTIVE_DOSAGE: 6984
+  INACTIVE_KEEPCHILDREN: 6981
+  INDICATION_KEEPCHILDREN: 6970
+  DOSAGE_KEEPCHILDREN: 6961
+  INACTIVE_WARNING: 6924
+  ACTIVE_KEEPCHILDREN: 6912
+  HAS_PURPOSE: 6871
+  INACTIVE_PURPOSE: 6868
+  INDICATION_PURPOSE: 6855
+  DOSAGE_PURPOSE: 6850
+  ACTIVE_WARNING: 6835
+  PURPOSE_WARNING: 6827
+  KEEPCHILDREN_WARNING: 6813
+  KEEPCHILDREN_PURPOSE: 6808
+  ACTIVE_PURPOSE: 6802
+  STOP_USE: 2814
+  INACTIVE_STOPUSE: 2814
+  INDICATION_STOPUSE: 2808
+  KEEPCHILDREN_STOPUSE: 2808
+  DOSAGE_STOPUSE: 2805
+  ACTIVE_STOPUSE: 2795
+  HAS_STORAGE: 2688
+  DOSAGE_STORAGE: 2677
+  INDICATION_STORAGE: 2676
+  PURPOSE_STOPUSE: 2671
+  STOPUSE_WARNING: 2645
+  PREGNANCY_LACTATION: 2388
+  INACTIVE_PREGNANCY: 2388
+  DOSAGE_PREGNANCY: 2386
+  INDICATION_PREGNANCY: 2386
+  ACTIVE_PREGNANCY: 2385
+  KEEPCHILDREN_PREGNANCY: 2383
+  PREGNANCY_PURPOSE: 2239
+  PREGNANCY_WARNING: 2232
+  DO_NOT_USE: 2082
+  DONOTUSE_INACTIVE: 2082
+  DONOTUSE_INDICATION: 2078
+  DONOTUSE_DOSAGE: 2077
+  DONOTUSE_KEEPCHILDREN: 2074
+  ACTIVE_DONOTUSE: 2071
+  DONOTUSE_WARNING: 2071
+  DONOTUSE_PURPOSE: 2062
+  STORAGE_WARNING: 1994
+  INACTIVE_STORAGE: 1812
+  DONOTUSE_STOPUSE: 1796
+  PURPOSE_STORAGE: 1788
+  ACTIVE_STORAGE: 1787
+  KEEPCHILDREN_STORAGE: 1775
+  ASK_DOCTOR: 1585
+  ASKDOCTOR_INACTIVE: 1585
+  ASKDOCTOR_INDICATION: 1584
+  ASKDOCTOR_KEEPCHILDREN: 1582
+  ACTIVE_ASKDOCTOR: 1581
+  ASKDOCTOR_DOSAGE: 1581
+  ASKDOCTOR_PURPOSE: 1575
+  ASKDOCTOR_WARNING: 1568
+  PREGNANCY_STOPUSE: 1475
+  HAS_DOSAGE_TABLE: 1454
+  DOSAGE_DOSAGETABLE: 1454
+  DOSAGETABLE_INDICATION: 1452
+  ASKDOCTOR_STOPUSE: 1302
+  STOPUSE_STORAGE: 1104
+  ASKDOCTOR_DONOTUSE: 1090
+  ASKDOCTOR_PREGNANCY: 1038
+  PREGNANCY_STORAGE: 961
+  DONOTUSE_PREGNANCY: 942
+  DONOTUSE_STORAGE: 907
+  ASKDOCTOR_STORAGE: 778
+  ASK_PHARMACIST: 749
+  ASKPHARMACIST_INACTIVE: 749
+  ASKPHARMACIST_INDICATION: 749
+  ASKPHARMACIST_WARNING: 749
+  ASKPHARMACIST_DOSAGE: 747
+  ACTIVE_ASKPHARMACIST: 747
+  ASKPHARMACIST_KEEPCHILDREN: 745
+  ASKPHARMACIST_PURPOSE: 738
+  DOSAGETABLE_STORAGE: 703
+  ASKPHARMACIST_STOPUSE: 682
+  ASKDOCTOR_ASKPHARMACIST: 658
+  DOSAGETABLE_WARNING: 654
+  ASKPHARMACIST_PREGNANCY: 646
+  ASKPHARMACIST_DONOTUSE: 614
+  DOSAGETABLE_INACTIVE: 530
+  ACTIVE_DOSAGETABLE: 528
+  DOSAGETABLE_KEEPCHILDREN: 527
+  DOSAGETABLE_PURPOSE: 527
+  DOSAGETABLE_STOPUSE: 437
+  ASKPHARMACIST_STORAGE: 422
+  ASKDOCTOR_DOSAGETABLE: 414
+  DOSAGETABLE_PREGNANCY: 398
+  DONOTUSE_DOSAGETABLE: 375
+  ASKPHARMACIST_DOSAGETABLE: 289
+
+--- Edge attribute keys ---
+  relation: appears on 355909/355909 edges
+  weight: appears on 355909/355909 edges
+  source_db: appears on 355909/355909 edges
+  evidence: appears on 355909/355909 edges
+  retrieval_date: appears on 355909/355909 edges
+
+--- One sample edge per relation type ---
+
+Relation: BRAND_GENERIC
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'DRUG_BRAND:67d8adeea168ef45' [drug_brand]
+  Edge data: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Sonacaine Topical Anesthetic With Menthol' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+
+Relation: HAS_ACTIVE_INGREDIENT_TEXT
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:7ce1aab622816ca5' [active_ingredient]
+  Edge data: {'relation': 'HAS_ACTIVE_INGREDIENT_TEXT', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:active_ingredient', 'retrieval_date': '2025-08-19'}
+
+Relation: DO_NOT_USE
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:844ec1ce62df85da' [do_not_use]
+  Edge data: {'relation': 'DO_NOT_USE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:do_not_use', 'retrieval_date': '2025-08-19'}
+
+Relation: HAS_DOSAGE
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:4d48901dd8df4009' [dosage_and_administration]
+  Edge data: {'relation': 'HAS_DOSAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:dosage_and_administration', 'retrieval_date': '2025-08-19'}
+
+Relation: HAS_INACTIVE_INGREDIENT_TEXT
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:2f9c1b7a156e5ef9' [inactive_ingredient]
+  Edge data: {'relation': 'HAS_INACTIVE_INGREDIENT_TEXT', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:inactive_ingredient', 'retrieval_date': '2025-08-19'}
+
+Relation: HAS_INDICATION_TEXT
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:a4fe1224a09f250e' [indications_and_usage]
+  Edge data: {'relation': 'HAS_INDICATION_TEXT', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:indications_and_usage', 'retrieval_date': '2025-08-19'}
+
+Relation: KEEP_OUT_OF_REACH
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:611a945f2baa6505' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'KEEP_OUT_OF_REACH', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: PREGNANCY_LACTATION
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:06ca5eeadbd18d54' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'PREGNANCY_LACTATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: HAS_PURPOSE
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:3d4467c85b493fc2' [purpose]
+  Edge data: {'relation': 'HAS_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: HAS_WARNING
+  'DRUG_GENERIC:6e49f2b49e93d317' [drug_generic]  -->  'SECTION:c9c2a606ee6a9cc5' [warnings]
+  Edge data: {'relation': 'HAS_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: ASK_DOCTOR
+  'DRUG_GENERIC:3840b059b5d2f0a2' [drug_generic]  -->  'SECTION:9cc1614c995a031c' [ask_doctor]
+  Edge data: {'relation': 'ASK_DOCTOR', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:ask_doctor', 'retrieval_date': '2025-08-19'}
+
+Relation: STOP_USE
+  'DRUG_GENERIC:3840b059b5d2f0a2' [drug_generic]  -->  'SECTION:d5ccf7545ada5a05' [stop_use]
+  Edge data: {'relation': 'STOP_USE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: HAS_DOSAGE_TABLE
+  'DRUG_GENERIC:9b60040111d99239' [drug_generic]  -->  'SECTION:15d02e84fa377cfd' [dosage_and_administration_table]
+  Edge data: {'relation': 'HAS_DOSAGE_TABLE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:dosage_and_administration_table', 'retrieval_date': '2025-08-19'}
+
+Relation: HAS_STORAGE
+  'DRUG_GENERIC:9b60040111d99239' [drug_generic]  -->  'SECTION:0fbaaac5b7deedc0' [storage_and_handling]
+  Edge data: {'relation': 'HAS_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: ASK_PHARMACIST
+  'DRUG_GENERIC:048d8e9d2647431b' [drug_generic]  -->  'SECTION:5045d397ab6c39d7' [ask_doctor_or_pharmacist]
+  Edge data: {'relation': 'ASK_PHARMACIST', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:ask_doctor_or_pharmacist', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_DOSAGETABLE
+  'SECTION:ffb3594f603ea6eb' [dosage_and_administration]  -->  'SECTION:4765d92bd89f44ed' [dosage_and_administration_table]
+  Edge data: {'relation': 'DOSAGE_DOSAGETABLE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+dosage_and_administration_table', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_INDICATION
+  'SECTION:ffb3594f603ea6eb' [dosage_and_administration]  -->  'SECTION:bae9d04a31d784b6' [indications_and_usage]
+  Edge data: {'relation': 'DOSAGE_INDICATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+indications_and_usage', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGETABLE_INDICATION
+  'SECTION:4765d92bd89f44ed' [dosage_and_administration_table]  -->  'SECTION:bae9d04a31d784b6' [indications_and_usage]
+  Edge data: {'relation': 'DOSAGETABLE_INDICATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration_table+indications_and_usage', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_DOSAGE
+  'SECTION:85fdf38ade51f2f0' [active_ingredient]  -->  'SECTION:07c89bce7b02a6d8' [dosage_and_administration]
+  Edge data: {'relation': 'ACTIVE_DOSAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+dosage_and_administration', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_INACTIVE
+  'SECTION:85fdf38ade51f2f0' [active_ingredient]  -->  'SECTION:16e1777face52cfc' [inactive_ingredient]
+  Edge data: {'relation': 'ACTIVE_INACTIVE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+inactive_ingredient', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_INDICATION
+  'SECTION:85fdf38ade51f2f0' [active_ingredient]  -->  'SECTION:a5109bf2da8640ad' [indications_and_usage]
+  Edge data: {'relation': 'ACTIVE_INDICATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+indications_and_usage', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_KEEPCHILDREN
+  'SECTION:85fdf38ade51f2f0' [active_ingredient]  -->  'SECTION:9a679c2d38d49082' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'ACTIVE_KEEPCHILDREN', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_PURPOSE
+  'SECTION:85fdf38ade51f2f0' [active_ingredient]  -->  'SECTION:febb4d9bfa02cbc6' [purpose]
+  Edge data: {'relation': 'ACTIVE_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_WARNING
+  'SECTION:85fdf38ade51f2f0' [active_ingredient]  -->  'SECTION:d333f6442d685115' [warnings]
+  Edge data: {'relation': 'ACTIVE_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_INACTIVE
+  'SECTION:07c89bce7b02a6d8' [dosage_and_administration]  -->  'SECTION:16e1777face52cfc' [inactive_ingredient]
+  Edge data: {'relation': 'DOSAGE_INACTIVE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+inactive_ingredient', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_KEEPCHILDREN
+  'SECTION:07c89bce7b02a6d8' [dosage_and_administration]  -->  'SECTION:9a679c2d38d49082' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'DOSAGE_KEEPCHILDREN', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_PURPOSE
+  'SECTION:07c89bce7b02a6d8' [dosage_and_administration]  -->  'SECTION:febb4d9bfa02cbc6' [purpose]
+  Edge data: {'relation': 'DOSAGE_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_WARNING
+  'SECTION:07c89bce7b02a6d8' [dosage_and_administration]  -->  'SECTION:d333f6442d685115' [warnings]
+  Edge data: {'relation': 'DOSAGE_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: INACTIVE_INDICATION
+  'SECTION:16e1777face52cfc' [inactive_ingredient]  -->  'SECTION:a5109bf2da8640ad' [indications_and_usage]
+  Edge data: {'relation': 'INACTIVE_INDICATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:inactive_ingredient+indications_and_usage', 'retrieval_date': '2025-08-19'}
+
+Relation: INACTIVE_KEEPCHILDREN
+  'SECTION:16e1777face52cfc' [inactive_ingredient]  -->  'SECTION:9a679c2d38d49082' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'INACTIVE_KEEPCHILDREN', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:inactive_ingredient+keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: INACTIVE_PURPOSE
+  'SECTION:16e1777face52cfc' [inactive_ingredient]  -->  'SECTION:febb4d9bfa02cbc6' [purpose]
+  Edge data: {'relation': 'INACTIVE_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:inactive_ingredient+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: INACTIVE_WARNING
+  'SECTION:16e1777face52cfc' [inactive_ingredient]  -->  'SECTION:d333f6442d685115' [warnings]
+  Edge data: {'relation': 'INACTIVE_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:inactive_ingredient+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: INDICATION_KEEPCHILDREN
+  'SECTION:a5109bf2da8640ad' [indications_and_usage]  -->  'SECTION:9a679c2d38d49082' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'INDICATION_KEEPCHILDREN', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:indications_and_usage+keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: INDICATION_PURPOSE
+  'SECTION:a5109bf2da8640ad' [indications_and_usage]  -->  'SECTION:febb4d9bfa02cbc6' [purpose]
+  Edge data: {'relation': 'INDICATION_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:indications_and_usage+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: INDICATION_WARNING
+  'SECTION:a5109bf2da8640ad' [indications_and_usage]  -->  'SECTION:d333f6442d685115' [warnings]
+  Edge data: {'relation': 'INDICATION_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:indications_and_usage+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: KEEPCHILDREN_PURPOSE
+  'SECTION:9a679c2d38d49082' [keep_out_of_reach_of_children]  -->  'SECTION:febb4d9bfa02cbc6' [purpose]
+  Edge data: {'relation': 'KEEPCHILDREN_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:keep_out_of_reach_of_children+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: KEEPCHILDREN_WARNING
+  'SECTION:9a679c2d38d49082' [keep_out_of_reach_of_children]  -->  'SECTION:d333f6442d685115' [warnings]
+  Edge data: {'relation': 'KEEPCHILDREN_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:keep_out_of_reach_of_children+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: PURPOSE_WARNING
+  'SECTION:febb4d9bfa02cbc6' [purpose]  -->  'SECTION:d333f6442d685115' [warnings]
+  Edge data: {'relation': 'PURPOSE_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:purpose+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_DONOTUSE
+  'SECTION:eccf0105f0f80e20' [active_ingredient]  -->  'SECTION:34aea8ef8071608c' [do_not_use]
+  Edge data: {'relation': 'ACTIVE_DONOTUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+do_not_use', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_STOPUSE
+  'SECTION:eccf0105f0f80e20' [active_ingredient]  -->  'SECTION:5aa896e771ac4b0f' [stop_use]
+  Edge data: {'relation': 'ACTIVE_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_DOSAGE
+  'SECTION:34aea8ef8071608c' [do_not_use]  -->  'SECTION:b7b1e6020291c510' [dosage_and_administration]
+  Edge data: {'relation': 'DONOTUSE_DOSAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+dosage_and_administration', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_INACTIVE
+  'SECTION:34aea8ef8071608c' [do_not_use]  -->  'SECTION:af539ff45ca0501a' [inactive_ingredient]
+  Edge data: {'relation': 'DONOTUSE_INACTIVE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+inactive_ingredient', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_INDICATION
+  'SECTION:34aea8ef8071608c' [do_not_use]  -->  'SECTION:59c53f1a89b29f39' [indications_and_usage]
+  Edge data: {'relation': 'DONOTUSE_INDICATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+indications_and_usage', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_KEEPCHILDREN
+  'SECTION:34aea8ef8071608c' [do_not_use]  -->  'SECTION:77351492335a3855' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'DONOTUSE_KEEPCHILDREN', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_PURPOSE
+  'SECTION:34aea8ef8071608c' [do_not_use]  -->  'SECTION:7924b5dabab794c8' [purpose]
+  Edge data: {'relation': 'DONOTUSE_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_STOPUSE
+  'SECTION:34aea8ef8071608c' [do_not_use]  -->  'SECTION:5aa896e771ac4b0f' [stop_use]
+  Edge data: {'relation': 'DONOTUSE_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_WARNING
+  'SECTION:34aea8ef8071608c' [do_not_use]  -->  'SECTION:4683790ab4f80552' [warnings]
+  Edge data: {'relation': 'DONOTUSE_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_STOPUSE
+  'SECTION:b7b1e6020291c510' [dosage_and_administration]  -->  'SECTION:5aa896e771ac4b0f' [stop_use]
+  Edge data: {'relation': 'DOSAGE_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: INACTIVE_STOPUSE
+  'SECTION:af539ff45ca0501a' [inactive_ingredient]  -->  'SECTION:5aa896e771ac4b0f' [stop_use]
+  Edge data: {'relation': 'INACTIVE_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:inactive_ingredient+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: INDICATION_STOPUSE
+  'SECTION:59c53f1a89b29f39' [indications_and_usage]  -->  'SECTION:5aa896e771ac4b0f' [stop_use]
+  Edge data: {'relation': 'INDICATION_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:indications_and_usage+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: KEEPCHILDREN_STOPUSE
+  'SECTION:77351492335a3855' [keep_out_of_reach_of_children]  -->  'SECTION:5aa896e771ac4b0f' [stop_use]
+  Edge data: {'relation': 'KEEPCHILDREN_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:keep_out_of_reach_of_children+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: PURPOSE_STOPUSE
+  'SECTION:7924b5dabab794c8' [purpose]  -->  'SECTION:5aa896e771ac4b0f' [stop_use]
+  Edge data: {'relation': 'PURPOSE_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:purpose+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: STOPUSE_WARNING
+  'SECTION:5aa896e771ac4b0f' [stop_use]  -->  'SECTION:4683790ab4f80552' [warnings]
+  Edge data: {'relation': 'STOPUSE_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:stop_use+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_ASKDOCTOR
+  'SECTION:38dd2819e9214099' [active_ingredient]  -->  'SECTION:4fae61657c4976b1' [ask_doctor]
+  Edge data: {'relation': 'ACTIVE_ASKDOCTOR', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+ask_doctor', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_PREGNANCY
+  'SECTION:38dd2819e9214099' [active_ingredient]  -->  'SECTION:b3eb6a58347f9c96' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'ACTIVE_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_DOSAGE
+  'SECTION:4fae61657c4976b1' [ask_doctor]  -->  'SECTION:0cd634adf917cf34' [dosage_and_administration]
+  Edge data: {'relation': 'ASKDOCTOR_DOSAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+dosage_and_administration', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_INACTIVE
+  'SECTION:4fae61657c4976b1' [ask_doctor]  -->  'SECTION:bcdf32479b9603bb' [inactive_ingredient]
+  Edge data: {'relation': 'ASKDOCTOR_INACTIVE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+inactive_ingredient', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_INDICATION
+  'SECTION:4fae61657c4976b1' [ask_doctor]  -->  'SECTION:d48471dd2936452a' [indications_and_usage]
+  Edge data: {'relation': 'ASKDOCTOR_INDICATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+indications_and_usage', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_KEEPCHILDREN
+  'SECTION:4fae61657c4976b1' [ask_doctor]  -->  'SECTION:c02fe89fbf2f411f' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'ASKDOCTOR_KEEPCHILDREN', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_PREGNANCY
+  'SECTION:4fae61657c4976b1' [ask_doctor]  -->  'SECTION:b3eb6a58347f9c96' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'ASKDOCTOR_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_PURPOSE
+  'SECTION:4fae61657c4976b1' [ask_doctor]  -->  'SECTION:8abadccbcabcf49a' [purpose]
+  Edge data: {'relation': 'ASKDOCTOR_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_WARNING
+  'SECTION:4fae61657c4976b1' [ask_doctor]  -->  'SECTION:df436ccc14a89aa3' [warnings]
+  Edge data: {'relation': 'ASKDOCTOR_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_PREGNANCY
+  'SECTION:0cd634adf917cf34' [dosage_and_administration]  -->  'SECTION:b3eb6a58347f9c96' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'DOSAGE_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: INACTIVE_PREGNANCY
+  'SECTION:bcdf32479b9603bb' [inactive_ingredient]  -->  'SECTION:b3eb6a58347f9c96' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'INACTIVE_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:inactive_ingredient+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: INDICATION_PREGNANCY
+  'SECTION:d48471dd2936452a' [indications_and_usage]  -->  'SECTION:b3eb6a58347f9c96' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'INDICATION_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:indications_and_usage+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: KEEPCHILDREN_PREGNANCY
+  'SECTION:c02fe89fbf2f411f' [keep_out_of_reach_of_children]  -->  'SECTION:b3eb6a58347f9c96' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'KEEPCHILDREN_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:keep_out_of_reach_of_children+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: PREGNANCY_PURPOSE
+  'SECTION:b3eb6a58347f9c96' [pregnancy_or_breast_feeding]  -->  'SECTION:8abadccbcabcf49a' [purpose]
+  Edge data: {'relation': 'PREGNANCY_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:pregnancy_or_breast_feeding+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: PREGNANCY_WARNING
+  'SECTION:b3eb6a58347f9c96' [pregnancy_or_breast_feeding]  -->  'SECTION:df436ccc14a89aa3' [warnings]
+  Edge data: {'relation': 'PREGNANCY_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:pregnancy_or_breast_feeding+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGE_STORAGE
+  'SECTION:167526a9348b8b8b' [dosage_and_administration]  -->  'SECTION:8791eaa1440886ab' [storage_and_handling]
+  Edge data: {'relation': 'DOSAGE_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: INACTIVE_STORAGE
+  'SECTION:68f9359eb8227b42' [inactive_ingredient]  -->  'SECTION:8791eaa1440886ab' [storage_and_handling]
+  Edge data: {'relation': 'INACTIVE_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:inactive_ingredient+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: INDICATION_STORAGE
+  'SECTION:f0f60ea01fd749bf' [indications_and_usage]  -->  'SECTION:8791eaa1440886ab' [storage_and_handling]
+  Edge data: {'relation': 'INDICATION_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:indications_and_usage+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: STORAGE_WARNING
+  'SECTION:7e284e792cc89653' [storage_and_handling]  -->  'SECTION:58ba788a7e006e00' [warnings]
+  Edge data: {'relation': 'STORAGE_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:storage_and_handling+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_STORAGE
+  'SECTION:b20b35fc930830f5' [active_ingredient]  -->  'SECTION:236b403c72af0d10' [storage_and_handling]
+  Edge data: {'relation': 'ACTIVE_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_DONOTUSE
+  'SECTION:f3f311df08888907' [ask_doctor]  -->  'SECTION:1427d25c822532a0' [do_not_use]
+  Edge data: {'relation': 'ASKDOCTOR_DONOTUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+do_not_use', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_STORAGE
+  'SECTION:f3f311df08888907' [ask_doctor]  -->  'SECTION:236b403c72af0d10' [storage_and_handling]
+  Edge data: {'relation': 'ASKDOCTOR_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_STORAGE
+  'SECTION:1427d25c822532a0' [do_not_use]  -->  'SECTION:236b403c72af0d10' [storage_and_handling]
+  Edge data: {'relation': 'DONOTUSE_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: KEEPCHILDREN_STORAGE
+  'SECTION:eacd2e3e86a616e4' [keep_out_of_reach_of_children]  -->  'SECTION:236b403c72af0d10' [storage_and_handling]
+  Edge data: {'relation': 'KEEPCHILDREN_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:keep_out_of_reach_of_children+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: PURPOSE_STORAGE
+  'SECTION:726bea175424c7ac' [purpose]  -->  'SECTION:236b403c72af0d10' [storage_and_handling]
+  Edge data: {'relation': 'PURPOSE_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:purpose+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_STOPUSE
+  'SECTION:a8724cd7231936db' [ask_doctor]  -->  'SECTION:82b93baab56749e3' [stop_use]
+  Edge data: {'relation': 'ASKDOCTOR_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_ASKPHARMACIST
+  'SECTION:2953e791df0b7546' [ask_doctor]  -->  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]
+  Edge data: {'relation': 'ASKDOCTOR_ASKPHARMACIST', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+ask_doctor_or_pharmacist', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_DOSAGE
+  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]  -->  'SECTION:8487fb361c88618e' [dosage_and_administration]
+  Edge data: {'relation': 'ASKPHARMACIST_DOSAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+dosage_and_administration', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_INACTIVE
+  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]  -->  'SECTION:d94fa895f889e03c' [inactive_ingredient]
+  Edge data: {'relation': 'ASKPHARMACIST_INACTIVE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+inactive_ingredient', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_INDICATION
+  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]  -->  'SECTION:cec90a3fc3979077' [indications_and_usage]
+  Edge data: {'relation': 'ASKPHARMACIST_INDICATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+indications_and_usage', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_KEEPCHILDREN
+  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]  -->  'SECTION:73a96f484d86ccef' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'ASKPHARMACIST_KEEPCHILDREN', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_PREGNANCY
+  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]  -->  'SECTION:6d56db938092c455' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'ASKPHARMACIST_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_PURPOSE
+  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]  -->  'SECTION:ac4a85dbc3c8ae54' [purpose]
+  Edge data: {'relation': 'ASKPHARMACIST_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_STOPUSE
+  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]  -->  'SECTION:345f1938637e71be' [stop_use]
+  Edge data: {'relation': 'ASKPHARMACIST_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_WARNING
+  'SECTION:5909e647eb1ac910' [ask_doctor_or_pharmacist]  -->  'SECTION:2a692003e6582a0d' [warnings]
+  Edge data: {'relation': 'ASKPHARMACIST_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: PREGNANCY_STOPUSE
+  'SECTION:6d56db938092c455' [pregnancy_or_breast_feeding]  -->  'SECTION:345f1938637e71be' [stop_use]
+  Edge data: {'relation': 'PREGNANCY_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:pregnancy_or_breast_feeding+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_ASKPHARMACIST
+  'SECTION:5238822907734d95' [active_ingredient]  -->  'SECTION:efebc9dc97d77f8e' [ask_doctor_or_pharmacist]
+  Edge data: {'relation': 'ACTIVE_ASKPHARMACIST', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+ask_doctor_or_pharmacist', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_PREGNANCY
+  'SECTION:b9587854c574b169' [do_not_use]  -->  'SECTION:dd540dc63decd5d5' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'DONOTUSE_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: STOPUSE_STORAGE
+  'SECTION:dd47899941a83262' [stop_use]  -->  'SECTION:b2328b1c38804caa' [storage_and_handling]
+  Edge data: {'relation': 'STOPUSE_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:stop_use+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: PREGNANCY_STORAGE
+  'SECTION:c5fc2106fc5b3fd4' [pregnancy_or_breast_feeding]  -->  'SECTION:114d2e2f48b45eee' [storage_and_handling]
+  Edge data: {'relation': 'PREGNANCY_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:pregnancy_or_breast_feeding+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_DONOTUSE
+  'SECTION:f9ff28c423ace8ba' [ask_doctor_or_pharmacist]  -->  'SECTION:ec24ca45b6efa01f' [do_not_use]
+  Edge data: {'relation': 'ASKPHARMACIST_DONOTUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+do_not_use', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGETABLE_STORAGE
+  'SECTION:3a069d29499c5484' [dosage_and_administration_table]  -->  'SECTION:1f61ca168012da67' [storage_and_handling]
+  Edge data: {'relation': 'DOSAGETABLE_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration_table+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+Relation: ACTIVE_DOSAGETABLE
+  'SECTION:fecf6ccc7862ca93' [active_ingredient]  -->  'SECTION:fa3b6c91d9caf91b' [dosage_and_administration_table]
+  Edge data: {'relation': 'ACTIVE_DOSAGETABLE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:active_ingredient+dosage_and_administration_table', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKDOCTOR_DOSAGETABLE
+  'SECTION:647c6beac880a9b4' [ask_doctor]  -->  'SECTION:fa3b6c91d9caf91b' [dosage_and_administration_table]
+  Edge data: {'relation': 'ASKDOCTOR_DOSAGETABLE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor+dosage_and_administration_table', 'retrieval_date': '2025-08-19'}
+
+Relation: DONOTUSE_DOSAGETABLE
+  'SECTION:8b85b44989c8b65e' [do_not_use]  -->  'SECTION:fa3b6c91d9caf91b' [dosage_and_administration_table]
+  Edge data: {'relation': 'DONOTUSE_DOSAGETABLE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:do_not_use+dosage_and_administration_table', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGETABLE_INACTIVE
+  'SECTION:fa3b6c91d9caf91b' [dosage_and_administration_table]  -->  'SECTION:97cd357a63f007bc' [inactive_ingredient]
+  Edge data: {'relation': 'DOSAGETABLE_INACTIVE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration_table+inactive_ingredient', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGETABLE_KEEPCHILDREN
+  'SECTION:fa3b6c91d9caf91b' [dosage_and_administration_table]  -->  'SECTION:254cca29c8a6d5a0' [keep_out_of_reach_of_children]
+  Edge data: {'relation': 'DOSAGETABLE_KEEPCHILDREN', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration_table+keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGETABLE_PREGNANCY
+  'SECTION:fa3b6c91d9caf91b' [dosage_and_administration_table]  -->  'SECTION:639c5025bdef754d' [pregnancy_or_breast_feeding]
+  Edge data: {'relation': 'DOSAGETABLE_PREGNANCY', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration_table+pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGETABLE_PURPOSE
+  'SECTION:fa3b6c91d9caf91b' [dosage_and_administration_table]  -->  'SECTION:1bb4983d6b8eafb9' [purpose]
+  Edge data: {'relation': 'DOSAGETABLE_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration_table+purpose', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGETABLE_WARNING
+  'SECTION:fa3b6c91d9caf91b' [dosage_and_administration_table]  -->  'SECTION:6346bcafc16fd7db' [warnings]
+  Edge data: {'relation': 'DOSAGETABLE_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration_table+warnings', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_DOSAGETABLE
+  'SECTION:d8f504e4402b54ea' [ask_doctor_or_pharmacist]  -->  'SECTION:d16c7ea5c649c513' [dosage_and_administration_table]
+  Edge data: {'relation': 'ASKPHARMACIST_DOSAGETABLE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+dosage_and_administration_table', 'retrieval_date': '2025-08-19'}
+
+Relation: DOSAGETABLE_STOPUSE
+  'SECTION:d16c7ea5c649c513' [dosage_and_administration_table]  -->  'SECTION:70817253b71b4b7a' [stop_use]
+  Edge data: {'relation': 'DOSAGETABLE_STOPUSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:dosage_and_administration_table+stop_use', 'retrieval_date': '2025-08-19'}
+
+Relation: ASKPHARMACIST_STORAGE
+  'SECTION:60a1b3a89dadc6ad' [ask_doctor_or_pharmacist]  -->  'SECTION:c75ab7afa9eeb4ef' [storage_and_handling]
+  Edge data: {'relation': 'ASKPHARMACIST_STORAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'sections:ask_doctor_or_pharmacist+storage_and_handling', 'retrieval_date': '2025-08-19'}
+
+--- Node-type-pair connection patterns (source -> target) ---
+  drug_generic -> drug_brand: 34877
+  drug_generic -> dosage_and_administration: 9443
+  drug_generic -> indications_and_usage: 9442
+  dosage_and_administration -> indications_and_usage: 9415
+  drug_generic -> warnings: 7590
+  indications_and_usage -> warnings: 7555
+  dosage_and_administration -> warnings: 7551
+  drug_generic -> inactive_ingredient: 7107
+  inactive_ingredient -> indications_and_usage: 7086
+  dosage_and_administration -> inactive_ingredient: 7081
+  drug_generic -> active_ingredient: 7008
+  active_ingredient -> inactive_ingredient: 7006
+  active_ingredient -> indications_and_usage: 6990
+  drug_generic -> keep_out_of_reach_of_children: 6985
+  active_ingredient -> dosage_and_administration: 6984
+  inactive_ingredient -> keep_out_of_reach_of_children: 6981
+  indications_and_usage -> keep_out_of_reach_of_children: 6970
+  dosage_and_administration -> keep_out_of_reach_of_children: 6961
+  inactive_ingredient -> warnings: 6924
+  active_ingredient -> keep_out_of_reach_of_children: 6912
+  drug_generic -> purpose: 6871
+  inactive_ingredient -> purpose: 6868
+  indications_and_usage -> purpose: 6855
+  dosage_and_administration -> purpose: 6850
+  active_ingredient -> warnings: 6835
+  purpose -> warnings: 6827
+  keep_out_of_reach_of_children -> warnings: 6813
+  keep_out_of_reach_of_children -> purpose: 6808
+  active_ingredient -> purpose: 6802
+  drug_generic -> stop_use: 2814
+  inactive_ingredient -> stop_use: 2814
+  indications_and_usage -> stop_use: 2808
+  keep_out_of_reach_of_children -> stop_use: 2808
+  dosage_and_administration -> stop_use: 2805
+  active_ingredient -> stop_use: 2795
+  drug_generic -> storage_and_handling: 2688
+  dosage_and_administration -> storage_and_handling: 2677
+  indications_and_usage -> storage_and_handling: 2676
+  purpose -> stop_use: 2671
+  stop_use -> warnings: 2645
+  drug_generic -> pregnancy_or_breast_feeding: 2388
+  inactive_ingredient -> pregnancy_or_breast_feeding: 2388
+  dosage_and_administration -> pregnancy_or_breast_feeding: 2386
+  indications_and_usage -> pregnancy_or_breast_feeding: 2386
+  active_ingredient -> pregnancy_or_breast_feeding: 2385
+  keep_out_of_reach_of_children -> pregnancy_or_breast_feeding: 2383
+  pregnancy_or_breast_feeding -> purpose: 2239
+  pregnancy_or_breast_feeding -> warnings: 2232
+  drug_generic -> do_not_use: 2082
+  do_not_use -> inactive_ingredient: 2082
+  do_not_use -> indications_and_usage: 2078
+  do_not_use -> dosage_and_administration: 2077
+  do_not_use -> keep_out_of_reach_of_children: 2074
+  active_ingredient -> do_not_use: 2071
+  do_not_use -> warnings: 2071
+  do_not_use -> purpose: 2062
+  storage_and_handling -> warnings: 1994
+  inactive_ingredient -> storage_and_handling: 1812
+  do_not_use -> stop_use: 1796
+  purpose -> storage_and_handling: 1788
+  active_ingredient -> storage_and_handling: 1787
+  keep_out_of_reach_of_children -> storage_and_handling: 1775
+  drug_generic -> ask_doctor: 1585
+  ask_doctor -> inactive_ingredient: 1585
+  ask_doctor -> indications_and_usage: 1584
+  ask_doctor -> keep_out_of_reach_of_children: 1582
+  active_ingredient -> ask_doctor: 1581
+  ask_doctor -> dosage_and_administration: 1581
+  ask_doctor -> purpose: 1575
+  ask_doctor -> warnings: 1568
+  pregnancy_or_breast_feeding -> stop_use: 1475
+  drug_generic -> dosage_and_administration_table: 1454
+  dosage_and_administration -> dosage_and_administration_table: 1454
+  dosage_and_administration_table -> indications_and_usage: 1452
+  ask_doctor -> stop_use: 1302
+  stop_use -> storage_and_handling: 1104
+  ask_doctor -> do_not_use: 1090
+  ask_doctor -> pregnancy_or_breast_feeding: 1038
+  pregnancy_or_breast_feeding -> storage_and_handling: 961
+  do_not_use -> pregnancy_or_breast_feeding: 942
+  do_not_use -> storage_and_handling: 907
+  ask_doctor -> storage_and_handling: 778
+  drug_generic -> ask_doctor_or_pharmacist: 749
+  ask_doctor_or_pharmacist -> inactive_ingredient: 749
+  ask_doctor_or_pharmacist -> indications_and_usage: 749
+  ask_doctor_or_pharmacist -> warnings: 749
+  ask_doctor_or_pharmacist -> dosage_and_administration: 747
+  active_ingredient -> ask_doctor_or_pharmacist: 747
+  ask_doctor_or_pharmacist -> keep_out_of_reach_of_children: 745
+  ask_doctor_or_pharmacist -> purpose: 738
+  dosage_and_administration_table -> storage_and_handling: 703
+  ask_doctor_or_pharmacist -> stop_use: 682
+  ask_doctor -> ask_doctor_or_pharmacist: 658
+  dosage_and_administration_table -> warnings: 654
+  ask_doctor_or_pharmacist -> pregnancy_or_breast_feeding: 646
+  ask_doctor_or_pharmacist -> do_not_use: 614
+  dosage_and_administration_table -> inactive_ingredient: 530
+  active_ingredient -> dosage_and_administration_table: 528
+  dosage_and_administration_table -> keep_out_of_reach_of_children: 527
+  dosage_and_administration_table -> purpose: 527
+  dosage_and_administration_table -> stop_use: 437
+  ask_doctor_or_pharmacist -> storage_and_handling: 422
+  ask_doctor -> dosage_and_administration_table: 414
+  dosage_and_administration_table -> pregnancy_or_breast_feeding: 398
+  do_not_use -> dosage_and_administration_table: 375
+  ask_doctor_or_pharmacist -> dosage_and_administration_table: 289
+
+--- Full 1-hop neighborhood of sample drug_generic node ---
+Node: 'DRUG_GENERIC:6e49f2b49e93d317' -> LIDOCAINE
+  --> [drug_brand] Sonacaine Topical Anesthetic With Menthol  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Sonacaine Topical Anesthetic With Menthol' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Salonpas Pain Relieving LIDOCAINE 4% FLEX  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Salonpas Pain Relieving LIDOCAINE 4% FLEX' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] DYNAMO DELAY  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'DYNAMO DELAY' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine 5%  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine 5%' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] EPIC Burn Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'EPIC Burn Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Natural Seal Itch Relief for Kids  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Natural Seal Itch Relief for Kids' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Aspercreme  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Aspercreme' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Nupharmisto  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Nupharmisto' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Assured Bikini Smooth Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Assured Bikini Smooth Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] RECTICARE  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'RECTICARE' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Tylenol Precise Pain Relieving  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Tylenol Precise Pain Relieving' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] SWISS NAVY Endurance Rx  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'SWISS NAVY Endurance Rx' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] LMR Plus  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'LMR Plus' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hemorrhoid Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hemorrhoid Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Curist Lidocaine Patch Maximum Strength  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Curist Lidocaine Patch Maximum Strength' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Equate Pain Relieving Cream Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Equate Pain Relieving Cream Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine 4 Percent  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine 4 Percent' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Greencaine Blast  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Greencaine Blast' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] LidoPure Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'LidoPure Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Aspercreme with Lidocaine Dry  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Aspercreme with Lidocaine Dry' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] PROPLEX LIDOCAINE  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'PROPLEX LIDOCAINE' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] LMX4  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'LMX4' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Universal PAIN RELIEF  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Universal PAIN RELIEF' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Prolayed  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Prolayed' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] LMX5  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'LMX5' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Burn Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Burn Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] True Lido  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'True Lido' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Pain Relief Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Pain Relief Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Loxyine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Loxyine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hempvana Ultra Strength Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hempvana Ultra Strength Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Aspercreme Lidocaine XL  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Aspercreme Lidocaine XL' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Albertsons Pain Relief Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Albertsons Pain Relief Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Maximum Strength Pain Relief Lidocaine Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Maximum Strength Pain Relief Lidocaine Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] up and up lidocaine pain relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'up and up lidocaine pain relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] TheraCare Pain Relieving Patch with Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'TheraCare Pain Relieving Patch with Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] MAXIMUM STRENGTH HEMORRHOIDAL RELIEF  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'MAXIMUM STRENGTH HEMORRHOIDAL RELIEF' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] CVS Health Aftersun Aloe Vera Cooling  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'CVS Health Aftersun Aloe Vera Cooling' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Tylenol Precise Warming Pain Relieving  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Tylenol Precise Warming Pain Relieving' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Tattoo Numbing Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Tattoo Numbing Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] health mart lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'health mart lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Inderma MD  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Inderma MD' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] careone lidocaine pain relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'careone lidocaine pain relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Bactine Max  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Bactine Max' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Treatonic Tattoo Numbing Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Treatonic Tattoo Numbing Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hunter Beach 4%  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hunter Beach 4%' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] DR REAL NUMB Topical Anorectal  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'DR REAL NUMB Topical Anorectal' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Auebliss  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Auebliss' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] TOPCARE PAIN RELIEF PATCHES  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'TOPCARE PAIN RELIEF PATCHES' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Honest Med Lidocaine Pain Relief Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Honest Med Lidocaine Pain Relief Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine Dry  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine Dry' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] MEIJER PAIN RELIEF PATCHES  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'MEIJER PAIN RELIEF PATCHES' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] CVS Health Lidocaine Pain-Relieving  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'CVS Health Lidocaine Pain-Relieving' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Dr Saymans Wonder Rub  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Dr Saymans Wonder Rub' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] DermacinRx PHN Pak  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'DermacinRx PHN Pak' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Niravi 24 Hours Lidocaine 4 % Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Niravi 24 Hours Lidocaine 4 % Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] PAIN RELIEVING  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'PAIN RELIEVING' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] PAIN RELIEF PATCHES  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'PAIN RELIEF PATCHES' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Base Laboratories Base Numb Topical Anorectal Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Base Laboratories Base Numb Topical Anorectal Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hempvana Maximum Strength Pain Relief Topical Anesthetic  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hempvana Maximum Strength Pain Relief Topical Anesthetic' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] EQUATE Sunburn relief with Aloe After Sun  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'EQUATE Sunburn relief with Aloe After Sun' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Fruit of the Earth Sun Town City Aloe Vera After Sun with Li  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Fruit of the Earth Sun Town City Aloe Vera After Sun with Lidocaine HCL' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Tridacaine III  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Tridacaine III' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Leader Maximum Strength Hemorrhoidal Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Leader Maximum Strength Hemorrhoidal Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Meijer Lidocaine Pain Relief Patch Assortment Large  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Meijer Lidocaine Pain Relief Patch Assortment Large' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] HealthWise Lidocaine Pain relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'HealthWise Lidocaine Pain relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] ManaMed Lidocaine 4% Pain Relieving Gel Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'ManaMed Lidocaine 4% Pain Relieving Gel Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Amazon Basics Pain Relief Patch with 4% Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Amazon Basics Pain Relief Patch with 4% Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hilook Blue Gel Anesthetic  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hilook Blue Gel Anesthetic' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Numb520  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Numb520' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] HemAway  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'HemAway' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Meijer Pain Relief Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Meijer Pain Relief Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] RUGBY LIDOCAINE  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'RUGBY LIDOCAINE' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Brazzers Anal Desensitizing  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Brazzers Anal Desensitizing' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] SIMPLY VITAL HEMORRHOID and ANORECTAL RELIEF  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'SIMPLY VITAL HEMORRHOID and ANORECTAL RELIEF' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Bunnies Bum Hemorrhoidal Numbing  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Bunnies Bum Hemorrhoidal Numbing' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Flanax Back Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Flanax Back Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Curist Lidocaine Maximum Strength  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Curist Lidocaine Maximum Strength' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Numb Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Numb Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Fast Freeze Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Fast Freeze Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] TATOO CARE  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'TATOO CARE' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Prolayed Lidocaine Male Genital Desensitizer  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Prolayed Lidocaine Male Genital Desensitizer' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] BENGAY Ginger Citrus  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'BENGAY Ginger Citrus' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Painless Tattoo 2  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Painless Tattoo 2' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Dollar General Pain Relieving Patch with Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Dollar General Pain Relieving Patch with Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Burn  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Burn' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hilook Numbing Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hilook Numbing Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Melao NumbSpray  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Melao NumbSpray' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Theracare Lidocaine Pain relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Theracare Lidocaine Pain relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] RectoProtect  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'RectoProtect' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] NUMB PLUS Maximum Strength Anorectal  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'NUMB PLUS Maximum Strength Anorectal' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Pain Relieving Gel-Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Pain Relieving Gel-Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] SAMNYTE Tattoo Numbing Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'SAMNYTE Tattoo Numbing Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Rite Aid Lidocaine Patch XLarge  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Rite Aid Lidocaine Patch XLarge' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] LidaFlex  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'LidaFlex' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Pain Relief 4% Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Pain Relief 4% Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] MEIJER LIDOCAINE PAIN RELIEF BACK AND LARGE AREAS  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'MEIJER LIDOCAINE PAIN RELIEF BACK AND LARGE AREAS' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Coralite Odor Free Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Coralite Odor Free Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] SMART Numb Lidocaine Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'SMART Numb Lidocaine Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Will Relieve  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Will Relieve' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Meijer Lidocaine Pain Relief Patch Assortment Medium  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Meijer Lidocaine Pain Relief Patch Assortment Medium' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Leader Burn Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Leader Burn Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] DYNAMO DELAY SAMPLE BOTTLE  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'DYNAMO DELAY SAMPLE BOTTLE' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] 4 Lidocaine Topical Anesthetic  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand '4 Lidocaine Topical Anesthetic' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] DISCOUNT DRUG MART PAIN RELIEF PATCHES  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'DISCOUNT DRUG MART PAIN RELIEF PATCHES' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] HEMORRHOID OINTMENTS  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'HEMORRHOID OINTMENTS' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] THE SOLUTION 2.0  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'THE SOLUTION 2.0' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Steady Freddy  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Steady Freddy' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Dragon Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Dragon Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Desert Harvest RELEVEUM  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Desert Harvest RELEVEUM' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Nothing  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Nothing' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] CVS Health Lidocaine Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'CVS Health Lidocaine Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Curist Hemorrhoid Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Curist Hemorrhoid Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Advanced Seal Barrier plus Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Advanced Seal Barrier plus Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Basic Care Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Basic Care Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine Pain Relieving  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine Pain Relieving' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Elemar Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Elemar Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Ztlido  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Ztlido' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] True Lido Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'True Lido Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Solarcaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Solarcaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Adellina TATTOO NUMBING  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Adellina TATTOO NUMBING' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Curist Lidocaine Numbing Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Curist Lidocaine Numbing Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine Numbing Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine Numbing Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Aspercreme with Lidocaine Essential Oils Rosemary Mint  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Aspercreme with Lidocaine Essential Oils Rosemary Mint' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Bactine Max Lidocaine Roll-on 2.5oz  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Bactine Max Lidocaine Roll-on 2.5oz' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hush Anesthetic  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hush Anesthetic' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Kope Pain relief gel  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Kope Pain relief gel' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] CVS Health XL Lidocaine Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'CVS Health XL Lidocaine Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] QUALITY CHOICE PAIN RELIEF PATCHES  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'QUALITY CHOICE PAIN RELIEF PATCHES' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] KY Duration for Him  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'KY Duration for Him' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] ANORECTAL Lidocaine Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'ANORECTAL Lidocaine Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Treatonic Lidocaine Numbing Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Treatonic Lidocaine Numbing Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Tridacaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Tridacaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] PUREGEN LABS Pain Relief 4 Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'PUREGEN LABS Pain Relief 4 Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hemorrhoid Relief Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hemorrhoid Relief Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Pain Relieving Lidocaine Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Pain Relieving Lidocaine Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Deeveeant Numb  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Deeveeant Numb' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] CVS Health Lidocaine Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'CVS Health Lidocaine Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidoxryl  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidoxryl' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Alivio  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Alivio' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Rapid Relief Pain Relief Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Rapid Relief Pain Relief Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] BENGAY Tropical Jasmine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'BENGAY Tropical Jasmine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] MediRelief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'MediRelief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine Anesthetic Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine Anesthetic Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocanna  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocanna' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] GoodSense Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'GoodSense Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] SINSINPAS LIDOCAINE PAIN RELIEVING  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'SINSINPAS LIDOCAINE PAIN RELIEVING' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Nupharmisto Tattoo Numbing Cream 80g  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Nupharmisto Tattoo Numbing Cream 80g' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Pain free IV  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Pain free IV' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] PENICHILLIN  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'PENICHILLIN' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Bed Bug Instant Bite Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Bed Bug Instant Bite Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] PAIN RELIEF LIDOCAINE  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'PAIN RELIEF LIDOCAINE' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Microcaine Topical Analgesic  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Microcaine Topical Analgesic' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] MyDerm  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'MyDerm' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Numb 100  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Numb 100' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Xesso Strawberry Rear Comfort Glide 4% Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Xesso Strawberry Rear Comfort Glide 4% Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Signature Care Aloe Vera Gel with Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Signature Care Aloe Vera Gel with Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine 4% Maximum OTC Strength  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine 4% Maximum OTC Strength' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Leader PAIN RELIEF PATCHES  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Leader PAIN RELIEF PATCHES' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Base Laboratories Lidocaine Anesthetic Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Base Laboratories Lidocaine Anesthetic Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Ultra Lido Gel Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Ultra Lido Gel Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Pain and Itch Relief 4% Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Pain and Itch Relief 4% Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Meijer Lidocaine Pain Relief Patch Assortment Small  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Meijer Lidocaine Pain Relief Patch Assortment Small' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Kroger Pain Relief Lidocaine Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Kroger Pain Relief Lidocaine Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] THERA CARE PAIN THERAPY  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'THERA CARE PAIN THERAPY' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Signature Care Lidocaine Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Signature Care Lidocaine Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Welmate Lidocaine Pain Relieving Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Welmate Lidocaine Pain Relieving Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Plum Smooth Plumb Numb Gelee  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Plum Smooth Plumb Numb Gelee' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Sugardoh Ouchie Relief Roller  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Sugardoh Ouchie Relief Roller' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] PUREGEN LABS Maximum Strength Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'PUREGEN LABS Maximum Strength Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine Hydrochloride  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine Hydrochloride' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] MAXIMUM STRENGTH HEMORRHOIDAL RELIEF with Finger Cots  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'MAXIMUM STRENGTH HEMORRHOIDAL RELIEF with Finger Cots' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Sheffield Lidocaine  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Sheffield Lidocaine' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Tridacaine II  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Tridacaine II' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Zcaine Fast Acting Anesthetic  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Zcaine Fast Acting Anesthetic' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Walgreens Sunburn Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Walgreens Sunburn Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Zensa  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Zensa' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Bactine Max Antibiotic and Lidocaine Max Pain Relief  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Bactine Max Antibiotic and Lidocaine Max Pain Relief' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine Pain Relief Gel-Patch  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine Pain Relief Gel-Patch' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] BEAUELI  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'BEAUELI' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Careland Lidocaine 4 Pain Relieving Gel-Patches  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Careland Lidocaine 4 Pain Relieving Gel-Patches' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lidocaine Anorectal  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lidocaine Anorectal' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Crane Safety Burn  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Crane Safety Burn' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] RectaEase Hemorrhoid Relief Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'RectaEase Hemorrhoid Relief Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Rugby PAIN RELIEF PATCHES  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Rugby PAIN RELIEF PATCHES' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] PREMIER VALUE PAIN RELIEF PATCHES  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'PREMIER VALUE PAIN RELIEF PATCHES' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Xesso Rear Comfort Glide  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Xesso Rear Comfort Glide' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Ultra Lido Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Ultra Lido Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Lightning X Burn  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Lightning X Burn' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Asper Flex  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Asper Flex' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Nupharmisto Tattoo Numbing Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Nupharmisto Tattoo Numbing Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] MediNumb  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'MediNumb' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] LIDODERM  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'LIDODERM' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Bloop Fissure Healing Anorectal Topical  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Bloop Fissure Healing Anorectal Topical' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Dr. Numb  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Dr. Numb' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Hempvana Ultra Strength Pain Relief - Overnight  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Hempvana Ultra Strength Pain Relief - Overnight' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] HemRid Anorectal Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'HemRid Anorectal Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Salonpas LIDOCAINE Pain Relieving  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Salonpas LIDOCAINE Pain Relieving' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] GeriGentle FrostyHeat Pain Relief Patch 4 Lodocaine Back  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'GeriGentle FrostyHeat Pain Relief Patch 4 Lodocaine Back' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] ASTONEA Burn Cream  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'ASTONEA Burn Cream' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Numb Master  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Numb Master' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Natureplex Lidocaine 4%  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Natureplex Lidocaine 4%' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Foster and Thrive  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Foster and Thrive' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] MyDerm Medical 5 Lidocaine Numbing Roll-On  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'MyDerm Medical 5 Lidocaine Numbing Roll-On' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Numb 520  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Numb 520' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] ATOZCUP TATTOO NUMBING  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'ATOZCUP TATTOO NUMBING' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Aspercreme with Lidocaine XL  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Aspercreme with Lidocaine XL' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [drug_brand] Soundbody  | edge: {'relation': 'BRAND_GENERIC', 'weight': '1.0', 'source_db': 'FDA_tool_list', 'evidence': "Brand 'Soundbody' listed with generic 'LIDOCAINE'", 'retrieval_date': ''}
+  --> [active_ingredient] active_ingredient (LIDOCAINE)  | edge: {'relation': 'HAS_ACTIVE_INGREDIENT_TEXT', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:active_ingredient', 'retrieval_date': '2025-08-19'}
+  --> [do_not_use] do_not_use (LIDOCAINE)  | edge: {'relation': 'DO_NOT_USE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:do_not_use', 'retrieval_date': '2025-08-19'}
+  --> [dosage_and_administration] dosage_and_administration (LIDOCAINE)  | edge: {'relation': 'HAS_DOSAGE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:dosage_and_administration', 'retrieval_date': '2025-08-19'}
+  --> [inactive_ingredient] inactive_ingredient (LIDOCAINE)  | edge: {'relation': 'HAS_INACTIVE_INGREDIENT_TEXT', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:inactive_ingredient', 'retrieval_date': '2025-08-19'}
+  --> [indications_and_usage] indications_and_usage (LIDOCAINE)  | edge: {'relation': 'HAS_INDICATION_TEXT', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:indications_and_usage', 'retrieval_date': '2025-08-19'}
+  --> [keep_out_of_reach_of_children] keep_out_of_reach_of_children (LIDOCAINE)  | edge: {'relation': 'KEEP_OUT_OF_REACH', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:keep_out_of_reach_of_children', 'retrieval_date': '2025-08-19'}
+  --> [pregnancy_or_breast_feeding] pregnancy_or_breast_feeding (LIDOCAINE)  | edge: {'relation': 'PREGNANCY_LACTATION', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:pregnancy_or_breast_feeding', 'retrieval_date': '2025-08-19'}
+  --> [purpose] purpose (LIDOCAINE)  | edge: {'relation': 'HAS_PURPOSE', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:purpose', 'retrieval_date': '2025-08-19'}
+  --> [warnings] warnings (LIDOCAINE)  | edge: {'relation': 'HAS_WARNING', 'weight': '', 'source_db': 'openfda_label_api', 'evidence': 'field:warnings', 'retrieval_date': '2025-08-19'}
