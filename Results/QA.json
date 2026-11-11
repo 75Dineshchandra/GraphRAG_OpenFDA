@@ -1,0 +1,594 @@
+{
+  "T1-001": {
+    "qid": "T1-001",
+    "question": "What should I avoid if I am pregnant and using lidocaine?",
+    "answer": "D0337 (ALLANTOIN, LIDOCAINE): If pregnant or breast-feeding, ask a health professional before use. Do not use in large quantities, particularly over raw surfaces or blistered areas.",
+    "trace": ["D0337 | DRUG: ALLANTOIN, LIDOCAINE | SOURCE: normalized_drug_data_chunk_1168-1267.json"],
+    "sections": ["pregnancy_or_breast_feeding", "do_not_use"],
+    "answerable": true
+  },
+  "T1-002": {
+    "qid": "T1-002",
+    "question": "What organ-specific warning and daily intake limit apply to Acetaminophen and Phenylephrine HCl, and what medical conditions require consulting a doctor before use?",
+    "answer": "D0044 (ACETAMINOPHEN AND PHENYLEPRINE HCL): Liver warning: severe liver damage may occur if you take more than 4,000 mg of acetaminophen in 24 hours. Ask a doctor before use if you have liver disease, diabetes, heart disease, high blood pressure, thyroid disease, or trouble urinating due to an enlarged prostate gland. If pregnant or breast-feeding, ask a health professional before use.",
+    "trace": ["D0044 | DRUG: ACETAMINOPHEN AND PHENYLEPRINE HCL | SOURCE: normalized_drug_data_chunk_169-268.json"],
+    "sections": ["warnings", "ask_doctor", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+  "T1-003": {
+    "qid": "T1-003",
+    "question": "What local anesthetic allergy warning and mouth symptom duration limits apply to Benzocaine, Dextromethorphan HBr, and Menthol lozenges?",
+    "answer": "D0909 (BENZOCAINE, DEXTROMETHORPHAN HBR, MENTHOL): Do not use if you have a history of allergy to local anesthetics such as procaine, butacaine, benzocaine, or other \"caine\" anesthetics. Stop use and ask a dentist or doctor if sore mouth symptoms do not improve in 7 days, or if cough persists for more than 1 week. If pregnant or breast-feeding, ask a health care professional before use.",
+    "trace": ["D0909 | DRUG: BENZOCAINE, DEXTROMETHORPHAN HBR, MENTHOL | SOURCE: normalized_drug_data_chunk_2968-3067.json"],
+    "sections": ["warnings", "ask_doctor", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+  "T1-004": {
+    "qid": "T1-004",
+    "question": "What surface application exclusions and heating pad warnings apply to topical Benzyl Alcohol, and what skin reactions trigger stopping use?",
+    "answer": "D0926 (BENZYL ALCOHOL): Do not use on wounds or damaged skin, in large quantities, or with a heating pad if you are allergic to any ingredients of this product. Stop use if skin reactions occur, such as rash, itching, redness, irritation, pain, swelling and blistering. If pregnant or breast-feeding, ask a health professional before use.",
+    "trace": ["D0926 | DRUG: BENZYL ALCOHOL | SOURCE: normalized_drug_data_chunk_2968-3067.json"],
+    "sections": ["do_not_use", "stop_use", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+  "T1-005": {
+    "qid": "T1-005",
+    "question": "What solution appearance triggers a strict contraindication for Glycerin, Hypromellose, and Polypropylene Glycol 400 eye drops, and after how many hours of persistent symptoms must treatment stop?",
+    "answer": "D2145 (GLYCERIN, HYPROMELLOSE, POLYPROPYLENE GLYCOL 400): Do not use if the solution changes color or becomes cloudy. Stop use and ask a doctor if you have eye pain, changes in vision, continued redness or irritation of the eye, or if the condition worsens or persists for more than 72 hours. If pregnant or breast-feeding, ask a health professional before use.",
+    "trace": ["D2145 | DRUG: GLYCERIN, HYPROMELLOSE, POLYPROPYLENE GLYCOL 400 | SOURCE: normalized_drug_data_chunk_6000-6099.json"],
+    "sections": ["do_not_use", "stop_use", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+  "T1-006": {
+    "qid": "T1-006",
+    "question": "What administration route restriction and medical condition consultation rules apply to Hemorrhoidal Rectal Suppositories, and what warning applies if rectal bleeding occurs?",
+    "answer": "D2265 (HEMORRHOIDAL RECTAL SUPPOSITORIES): For rectal use only. Ask a doctor before use if you have heart disease, high blood pressure, thyroid disease, diabetes, or difficulty in urination due to enlargement of the prostate gland, unless directed by a doctor. Stop use and ask a doctor if bleeding occurs or if the condition worsens or does not improve within 7 days. If pregnant or breastfeeding, ask a health professional before use.",
+    "trace": ["D2265 | DRUG: HEMORRHOIDAL RECTAL SUPPOSITORIES | SOURCE: normalized_drug_data_chunk_6200-6299.json"],
+    "sections": ["warnings", "ask_doctor", "stop_use", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+  "T2-001": {
+    "qid": "T2-001",
+    "question": "What over-the-counter oral pain relievers are indicated for headaches, and what specific warnings or precautions apply to their use during pregnancy?",
+    "answer": "D0023 (ACETAMINOPHEN 500 MG, FILM-COATED TABLET): Temporarily relieves minor aches and pains due to the common cold, headache, backache, minor pain of arthritis, toothache, muscular aches, and premenstrual and menstrual cramps. If pregnant or breast-feeding, ask a health professional before use.",
+    "trace": ["D0023 | DRUG: ACETAMINOPHEN 500 MG, FILM-COATED TABLET | SOURCE: normalized_drug_data_chunk_169-268.json"],
+    "sections": ["indications_and_usage", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+  "T2-002": {
+    "qid": "T2-002",
+    "question": "What non-prescription oral medications are indicated for nausea, and what restrictions for children or teenagers apply to their use?",
+    "answer": "D1740 (DIMENHYDRINATE): indicated for prevention and treatment of symptoms associated with motion sickness: nausea, vomiting, dizziness. Do not use for children under 2 years of age unless directed by a doctor. D0955 (BISMUTH SUBSALICYLATE): relieves diarrhea upset stomach due to overindulgence in food and drink including heartburn, indigestion, nausea, gas, belching, fullness. Children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use this product (Reye's syndrome).",
+    "trace": [
+      "D1740 | DRUG: DIMENHYDRINATE | SOURCE: normalized_drug_data_chunk_4868-4967.json",
+      "D0955 | DRUG: BISMUTH SUBSALICYLATE | SOURCE: <fill from data>"
+    ],
+    "sections": ["indications_and_usage", "do_not_use", "warnings"],
+    "answerable": true
+  },
+  "T2-003": {
+    "qid": "T2-003",
+    "question": "What topical products provide temporary relief for itching associated with eczema, and what explicit contraindication warning applies to diaper rash?",
+    "answer": "D0438 (ANTI ITCH CREAM): For temporary relief of itching associated with minor skin irritations, inflammation, and rashes due to eczema, insect bites, poison ivy, poison oak, poison sumac, soaps, detergents, cosmetics, jewelry, seborrheic dermatitis, and psoriasis. Do not use for the treatment of diaper rash, consult a doctor.",
+    "trace": ["D0438 | DRUG: ANTI ITCH CREAM | SOURCE: normalized_drug_data_chunk_1568-1667.json"],
+    "sections": ["indications_and_usage", "do_not_use"],
+    "answerable": true
+  },
+  "T2-004": {
+    "qid": "T2-004",
+    "question": "What oral antacid formulations relieve heartburn and acid indigestion, and what medical consultation warnings apply to kidney disease or mineral-restricted diets (such as magnesium, sodium, or potassium)?",
+    "answer": "D0370 (ALUMINUM HYDROXIDE AND MAGNESIUM HYDROXIDE): Relief of acid indigestion, heartburn, sour stomach, and upset stomach due to these symptoms. Ask a doctor before use if you have kidney disease or a magnesium-restricted diet.",
+    "trace": ["D0370 | DRUG: ALUMINUM HYDROXIDE AND MAGNESIUM HYDROXIDE | SOURCE: normalized_drug_data_chunk_1368-1467.json"],
+    "sections": ["indications_and_usage", "ask_doctor"],
+    "answerable": true
+  },
+  "T2-005": {
+    "qid": "T2-005",
+    "question": "What decongestant products temporarily relieve nasal and sinus congestion from upper respiratory allergies, and what cardiovascular or thyroid warnings require consulting a doctor?",
+    "answer": "D0346 (ALLERGY NASAL): Temporarily relieves nasal congestion due to common cold, hay fever, and upper respiratory allergies, and temporarily relieves sinus congestion and pressure. Ask a doctor before use if you have heart disease, high blood pressure, thyroid disease, diabetes, or trouble urinating due to an enlarged prostate gland.",
+    "trace": ["D0346 | DRUG: ALLERGY NASAL | SOURCE: normalized_drug_data_chunk_1168-1267.json"],
+    "sections": ["indications_and_usage", "ask_doctor"],
+    "answerable": true
+  },
+  "T2-006": {
+    "qid": "T2-006",
+    "question": "Which topical products help treat diaper rash, and when should they not be used or be stopped?",
+    "answer": "D1706 (DIAPER RASH CREAM): helps treat and prevent diaper rash; protects chafed skin due to diaper rash and helps protect skin from wetness. Stop use and ask a doctor if condition worsens, or if symptoms last more than 7 days or clear up and occur again within a few days. D1707 (DIAPER RASH OINTMENT): helps treat and prevent diaper rash; protects and heals chafed and irritated skin. Do not use on deep or puncture wounds, animal bites, or serious burns. Stop use if condition worsens, or if symptoms last more than 7 days or clear up and occur again within a few days.",
+    "trace": [
+      "D1706 | DRUG: DIAPER RASH CREAM | SOURCE: normalized_drug_data_chunk_4868-4967.json",
+      "D1707 | DRUG: DIAPER RASH OINTMENT | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["indications_and_usage", "do_not_use", "stop_use"],
+    "answerable": true
+  },
+  "T2-007": {
+    "qid": "T2-007",
+    "question": "What products reduce underarm wetness, and what kidney-related and skin-related warnings apply to them?",
+    "answer": "D0198 (ADVANCED CARE GO FRESH REVIVE 48H ANTIPERSPIRANT DEODORANT): reduces underarm wetness. For external use only. Do not use on broken skin. Ask a doctor before use if you have kidney disease. Stop use if rash or irritation occurs. D0210 (ADVANCED CEDARWOOD AND MENTHOL 72H ANTIPERSPIRANT DEODORANT): reduces underarm wetness. For external use only. Do not use on broken skin. Ask a doctor before use if you have kidney disease. Stop use if rash or irritation occurs.",
+    "trace": [
+      "D0198 | DRUG: ADVANCED CARE GO FRESH REVIVE 48H ANTIPERSPIRANT DEODORANT | SOURCE: normalized_drug_data_chunk_868-967.json",
+      "D0210 | DRUG: ADVANCED CEDARWOOD AND MENTHOL 72H ANTIPERSPIRANT DEODORANT | SOURCE: normalized_drug_data_chunk_868-967.json"
+    ],
+    "sections": ["indications_and_usage", "warnings"],
+    "answerable": true
+  },
+  "T2-008": {
+    "qid": "T2-008",
+    "question": "What can I use for hemorrhoid pain and itching, and what restrictions apply for young children and during pregnancy?",
+    "answer": "D1713 (DIBUCAINE 1%): temporarily relieves pain and itching due to hemorrhoids or other anorectal disorders. Do not use in or near eyes, or in children under 2 years of age. If pregnant or breast-feeding, ask a health care professional before use.",
+    "trace": [
+      "D1713 | DRUG: DIBUCAINE 1% | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["indications_and_usage", "do_not_use", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+
+  "T3-005": {
+    "qid": "T3-005",
+    "question": "How many times a day can I apply Xiclofen ointment, and what should I do if it burns?",
+    "answer": "D1729 (DICLOFENAC SODIUM, METHYL SALICYLATE): Apply directly to the skin up to 4 times daily (8.5 g per day). If irritation or a burning sensation occurs during application, stop use and advise your doctor.",
+    "trace": ["D1729 | DRUG: DICLOFENAC SODIUM, METHYL SALICYLATE | SOURCE: normalized_drug_data_chunk_4868-4967.json"],
+    "sections": ["dosage_and_administration"],
+    "answerable": true
+  },
+  "T3-006": {
+    "qid": "T3-006",
+    "question": "Can I use Kank-a on my 1-year-old's gums for teething?",
+    "answer": "D0897 (BENZOCAINE AND MENTHOL, UNSPECIFIED FORM): Do not use for teething in children under 2 years of age. Children under 2 years of age: do not use.",
+    "trace": ["D0897 | DRUG: BENZOCAINE AND MENTHOL, UNSPECIFIED FORM | SOURCE: normalized_drug_data_chunk_2868-2967.json"],
+    "sections": ["do_not_use", "dosage_and_administration"],
+    "answerable": true
+  },
+  "T3-007": {
+    "qid": "T3-007",
+    "question": "When should I stop using Baby XtraCare Oatmeal Daily Moisturizing Lotion?",
+    "answer": "D1742 (DIMETHICONE): Stop use and ask a doctor if condition worsens, or if symptoms last more than 7 days or clear up and occur again within a few days. For external use only; avoid contact with eyes, and in case of eye contact, flush with water.",
+    "trace": ["D1742 | DRUG: DIMETHICONE | SOURCE: normalized_drug_data_chunk_4868-4967.json"],
+    "sections": ["warnings"],
+    "answerable": true
+  },
+  "T3-008": {
+    "qid": "T3-008",
+    "question": "What serious reactions are warned about with Gastrografin?",
+    "answer": "D1710 (DIATRIZOATE MEGLUMINE AND DIATRIZOATE SODIUM): Hypertonic Gastrografin solutions may lead to hypovolemia and hypotension due to fluid loss from the intestine (dehydration). Anaphylactic reactions, including fatalities, have been reported.",
+    "trace": ["D1710 | DRUG: DIATRIZOATE MEGLUMINE AND DIATRIZOATE SODIUM | SOURCE: normalized_drug_data_chunk_4868-4967.json"],
+    "sections": ["warnings"],
+    "answerable": true
+  },
+  "T3-009": {
+    "qid": "T3-009",
+    "question": "What is RIMSO-50 used for, and how long is it left in the bladder?",
+    "answer": "D1757 (DIMETHYL SULFOXIDE): Indicated for symptomatic relief of patients with interstitial cystitis. 50 mL is instilled directly into the bladder and allowed to remain for 15 minutes, then expelled by spontaneous voiding; repeat every two weeks until maximum symptomatic relief is obtained.",
+    "trace": ["D1757 | DRUG: DIMETHYL SULFOXIDE | SOURCE: normalized_drug_data_chunk_4868-4967.json"],
+    "sections": ["indications_and_usage", "dosage_and_administration"],
+    "answerable": true
+  },
+  "T4-001": {
+    "qid": "T4-001",
+    "question": "What products treat a cold, and how do oral respiratory cold remedies differ from topical cold sore treatments?",
+    "answer": "D0014 (ACETAMINOPHEN , DIPHENHYDRAMINE HCL,PHENYLEPHRINE HCL): Temporarily relieves these common cold and flu symptoms: cough nasal congestion minor aches and pains sore throat headache. D0899 (BENZOCAINE AND WHITE PETROLATUM): Use temporarily relieves pain, itching and dryness; ; Softens crusts (scabs) associated with • cold sores • fever blisters.",
+    "trace": [
+      "D0014 | DRUG: ACETAMINOPHEN , DIPHENHYDRAMINE HCL,PHENYLEPHRINE HCL | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0899 | DRUG: BENZOCAINE AND WHITE PETROLATUM | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+  "T4-002": {
+    "qid": "T4-002",
+    "question": "What can I use for a burn, depending on whether it is internal heartburn or an external skin burn?",
+    "answer": "D1738 (DIGESTIVE BALANCE): For the temporary relief of stomach upset, flatulence and heartburn. D0836 (BENZAALKONIUM CHLORIDE, LIDOCAINE HCL): First aid to help prevent infection in minor cuts, scrapes and burns ; For the temporary relief of pain and itching associated with: ; sunburn ; minor burns ; insect bites ; minor skin irritation ; cuts ; scrapes.",
+    "trace": [
+      "D1738 | DRUG: DIGESTIVE BALANCE | SOURCE: normalized_drug_data_chunk_4868-4967.json",
+      "D0836 | DRUG: BENZAALKONIUM CHLORIDE, LIDOCAINE HCL | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+  "T4-003": {
+    "qid": "T4-003",
+    "question": "What remedies are available for a sore, depending on whether it is a sore throat or an oral mouth sore?",
+    "answer": "D0893 (BENZOCAINE AND DEXTROMETHORPHAN HBR): Temporarily relieves: occasional minor irritation, pain, sore throat and sore mouth cough due to minor throat and bronchial irritation as may occur with the common cold. D0881 (BENZOCAINE 20%): Temporarily relieves pain associated with toothache, canker sores, minor dental procedures, dentures, sore gums, and braces.",
+    "trace": [
+      "D0893 | DRUG: BENZOCAINE AND DEXTROMETHORPHAN HBR | SOURCE: normalized_drug_data_chunk_2868-2967.json",
+      "D0881 | DRUG: BENZOCAINE 20% | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+  "T4-004": {
+    "qid": "T4-004",
+    "question": "What remedies can I use for cramps, depending on whether I need relief for menstrual cramps or stomach cramps?",
+    "answer": "D0013 (ACETAMINOPHEN): Temporarily relieves minor aches and pains due to: headache, common cold, backache, minor pain of arthritis, toothache, muscular aches, premenstrual and menstrual cramps ; Temporarily reduces fever. D0008 (ABROTANUM): For occasional diarrhea and minor stomach cramps.",
+    "trace": [
+      "D0013 | DRUG: ACETAMINOPHEN | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0008 | DRUG: ABROTANUM | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["indications_and_usage", "purpose"],
+    "answerable": true
+  },
+  "T4-005": {
+    "qid": "T4-005",
+    "question": "What products help reduce wetness, depending on whether it is underarm wetness from sweating or diaper wetness in infants?",
+    "answer": "D0007 (ABOVE WOMEN DOLCE): Reduces underarm wetness. D1745 (DIMETHICONE AND ZINC OXIDE): helps treat and prevent diaper rash ; protects minor skin irritation due to diaper rash ; helps seal out wetness.",
+    "trace": [
+      "D0007 | DRUG: ABOVE WOMEN DOLCE | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D1745 | DRUG: DIMETHICONE AND ZINC OXIDE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+  "T4-006": {
+    "qid": "T4-006",
+    "question": "What skin protectants help with chapped areas, depending on whether you need relief for chapped lips or chapped body skin?",
+    "answer": "D1747 (DIMETHICONE, AVOBENZONE, HOMOSALATE, AND OCTISALATE): Temporarily protects and helps relieve chapped or cracked lips ; Helps prevent sunburn. D1743 (DIMETHICONE 1%): Helps prevent and temporarily protects chafed, chapped, or cracked skin.",
+    "trace": [
+      "D1747 | DRUG: DIMETHICONE, AVOBENZONE, HOMOSALATE, AND OCTISALATE | SOURCE: normalized_drug_data_chunk_4868-4967.json",
+      "D1743 | DRUG: DIMETHICONE 1% | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+  "T4-007": {
+    "qid": "T4-007",
+    "question": "What products help relieve pressure, depending on whether it is respiratory sinus pressure or skin pressure sores?",
+    "answer": "D0012 (ACETAMINOHPEN, DEXTROMETHORPHAN HBR, PHENYLEPHRINE HCL): Temporarily relieves these symptoms due to a cold ; Minor aches and pains ; Headache ; Nasal and sinus congestion ; Sore throat ; Cough due to minor throat and bronchial irritation ; Temporarily reduces fever. D0875 (BENZETHONIUM CHLORIDE, ALLANTOIN): Helps protect skin and supports healing of minor cuts, scrapes, burns and wounds, including pressure sores, diabetic ulcers, cracked skin, and lips. Topical antiseptic to help decrease the risk of infection.",
+    "trace": [
+      "D0012 | DRUG: ACETAMINOHPEN, DEXTROMETHORPHAN HBR, PHENYLEPHRINE HCL | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0875 | DRUG: BENZETHONIUM CHLORIDE, ALLANTOIN | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["indications_and_usage", "purpose"],
+    "answerable": true
+  },
+  "T4-008": {
+    "qid": "T4-008",
+    "question": "What skin products involve the term dry, depending on whether it refers to drying weather effects or a non-drying cleanser?",
+    "answer": "D1744 (DIMETHICONE 1.2%): Helps prevent, temporarily protects chafed, chapped or cracked skin ; Helps prevent and protect from the drying effects of wind and cold weather. D0873 (BENZETHONIUM CHLORIDE LIQUID): Use A unique, non-drying cleanser. Developed for all skin types and pH balanced ; Helps to decrease bacteria on the skin.",
+    "trace": [
+      "D1744 | DRUG: DIMETHICONE 1.2% | SOURCE: normalized_drug_data_chunk_4868-4967.json",
+      "D0873 | DRUG: BENZETHONIUM CHLORIDE LIQUID | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+  "T4-009": {
+    "qid": "T4-009",
+    "question": "What products can I use for a wash, depending on whether I need a hand wash to decrease bacteria or an external intimate wash?",
+    "answer": "D0837 (BENZALKONIUM): Use For handwashing to decrease bacteria on the skin. D0005 (ABOVE INTIMATE): APPLY TO THE PREVIOUSLY MOISTENED EXTERNAL INTIMATE REGION. SPREAD UNTIL FOAMY. RINSE THOROUGHLY AFTER USE.",
+    "trace": [
+      "D0837 | DRUG: BENZALKONIUM | SOURCE: normalized_drug_data_chunk_2868-2967.json",
+      "D0005 | DRUG: ABOVE INTIMATE | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+
+  "T5-001": {
+    "qid": "T5-001",
+    "question": "Compare the indications and stop-use triggers of Acetaminophen 250 mg / Ibuprofen 125 mg tablets versus Acetaminophen 160 mg.",
+    "answer": "D0016 (ACETAMINOPHEN 250 MG AND IBUPROFEN 125 MG TABLETS): Temporarily relieves minor aches and pains due to: headache, toothache, backache, menstrual cramps, muscular aches, minor pain of arthritis. Stop use and ask a doctor if you experience any of the following signs of stomach bleeding: feel faint, vomit blood, have bloody or black stools, have stomach pain that does not get better. You also stop use and ask a doctor if: pain gets worse or lasts more than 10 days; redness or swelling is present in the painful area; any new symptoms appear. D0015 (ACETAMINOPHEN 160MG): Reduces fever ; Relieves minor aches and pains due to: common cold, flu, headache, sore throat, toothache. Stop use if pain gets worse or lasts more than 5 days ; Fever gets worse or lasts more than 3 days ; New symptoms occur ; Redness or swelling is present.",
+    "trace": [
+      "D0016 | DRUG: ACETAMINOPHEN 250 MG AND IBUPROFEN 125 MG TABLETS | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0015 | DRUG: ACETAMINOPHEN 160MG | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["indications_and_usage", "stop_use"],
+    "answerable": true
+  },
+  "T5-002": {
+    "qid": "T5-002",
+    "question": "Compare the safety warnings and methemoglobinemia alerts of oral Benzalkonium Chloride / Benzocaine / Menthol versus topical Benzalkonium Chloride / Lidocaine Hydrochloride.",
+    "answer": "D0852 (BENZALKONIUM CHLORIDE, BENZOCAINE, MENTHOL): Methemoglobinemia warning: Use of this product may cause methemoglobinemia, a serious condition that must be treated promptly because it reduces the amount of oxygen carried in the blood. D0857 (BENZALKONIUM CHLORIDE, LIDOCAINE HYDROCHLORIDE): For external use only. Do not use • in the eyes • over large areas of the body • in large quantities • over raw surfaces or blistered areas • longer than 1 week unless directed by a doctor. The label for D0857 does not mention methemoglobinemia.",
+    "trace": [
+      "D0852 | DRUG: BENZALKONIUM CHLORIDE, BENZOCAINE, MENTHOL | SOURCE: normalized_drug_data_chunk_2868-2967.json",
+      "D0857 | DRUG: BENZALKONIUM CHLORIDE, LIDOCAINE HYDROCHLORIDE | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["warnings"],
+    "answerable": true
+  },
+  "T5-003": {
+    "qid": "T5-003",
+    "question": "Compare the indications and usage limits of topical Diclofenac Sodium 1% gel versus oral Acetaminophen / Diphenhydramine HCl.",
+    "answer": "D1718 (DICLOFENAC SODIUM 1%): Uses for the temporary relief of arthritis pain ONLY in the following areas: – hand, wrist, elbow (upper body areas) – foot, ankle, knee (lower body areas). Usage limits: Use up to 21 days unless directed by your doctor ; Daily For arthritis pain: Use 4 times per day every day ; Do not use on more than 2 body areas at the same time. D0020 (ACETAMINOPHEN 500 MG AND DIPHENHYDRAMINE HCL 25 MG): Temporarily relief of occasional headaches and minor aches and pains with accompanying sleeplessness. Usage limits: Adults and children 12 years and over: take 2 caplets at bedtime. Do not take more than 2 caplets of this product in 24 hours ; Children under 12 years: do not use.",
+    "trace": [
+      "D1718 | DRUG: DICLOFENAC SODIUM 1% | SOURCE: normalized_drug_data_chunk_4868-4967.json",
+      "D0020 | DRUG: ACETAMINOPHEN 500 MG AND DIPHENHYDRAMINE HCL 25 MG | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["indications_and_usage", "dosage_and_administration"],
+    "answerable": true
+  },
+  "T5-004": {
+    "qid": "T5-004",
+    "question": "Compare the indications and purpose of Acetaminophen 500 mg with Caffeine 65 mg versus Acetaminophen 500 mg.",
+    "answer": "D0021 (ACETAMINOPHEN 500 MG WITH CAFFEINE 65MG): Purpose: Pain reliever/fever reducer. Temporary relief of minor aches and pains due to: headache, muscular aches. D0019 (ACETAMINOPHEN 500 MG): Purpose: Pain reliever/Fever reducer. Temporarily relieves minor aches and pains due to: the common cold, headache, backache, minor pain of arthritis, toothache, muscular aches, premenstrual and menstrual cramps ; Temporarily reduces fever.",
+    "trace": [
+      "D0021 | DRUG: ACETAMINOPHEN 500 MG WITH CAFFEINE 65MG | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0019 | DRUG: ACETAMINOPHEN 500 MG | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["indications_and_usage", "purpose"],
+    "answerable": true
+  },
+  "T5-005": {
+    "qid": "T5-005",
+    "question": "Compare the indications and contraindications of Benzocaine 20% / Resorcinol 3% versus Benzocaine 5% Anti-Itch.",
+    "answer": "D0884 (BENZOCAINE 20%, RESORCINOL 3%): For the temporary relief of minor aches and pain associated with minor burns, minor skin irritations, minor cuts, insect bites or stings, scrapes, and sunburns. Do not use over large areas of the body ; Allergy alert: do not use this product if you have a history of allergy to local anesthetics such as procaine, butacaine, benzocaine, or other \"caine\" anesthetics. D0886 (BENZOCAINE 5%ANTI-ITCH): Temporarily relieves itching. Do not use if you have a vaginal discharge. Consult a physician.",
+    "trace": [
+      "D0884 | DRUG: BENZOCAINE 20%, RESORCINOL 3% | SOURCE: normalized_drug_data_chunk_2868-2967.json",
+      "D0886 | DRUG: BENZOCAINE 5%ANTI-ITCH | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["indications_and_usage", "do_not_use", "warnings"],
+    "answerable": true
+  },
+  "T5-006": {
+    "qid": "T5-006",
+    "question": "Compare the dosage and administration instructions and stop-use triggers of Benzalkonium Chloride first-aid spray versus Benzalkonium Chloride handwashing soap.",
+    "answer": "D0838 (BENZALKONIUM CHLOLRIDE): Clean affected area and spray 1 to 3 times daily ; May be covered with a sterile bandage ; Not to be used on children under 12 years of age. Stop use and ask a doctor if condition persists or gets worse. D0839 (BENZALKONIUM CHLORIDE): Wet hands, apply palmful to hands, scrub thoroughly, rinse thoroughly. Stop use and ask a doctor if irritation and redness develop condition persists for more than 72 hours.",
+    "trace": [
+      "D0838 | DRUG: BENZALKONIUM CHLOLRIDE | SOURCE: normalized_drug_data_chunk_2868-2967.json",
+      "D0839 | DRUG: BENZALKONIUM CHLORIDE | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["dosage_and_administration", "stop_use"],
+    "answerable": true
+  },
+  "T5-007": {
+    "qid": "T5-007",
+    "question": "Compare the indications and pregnancy warnings of Absinthium combination pellets versus Acer Campestre Leaf Bud.",
+    "answer": "D0009 (ABSINTHIUM, CENCHRIS CONTORTRIX, IGNATIA AMARA, MYGALE): Temporarily Relieves Minor and Occasional: • nervousness • sleeplessness • fatigue • frustration • irritability • restlessness. If pregnant or breastfeeding, consult your health professional before use. D0010 (ACER CAMPESTRE LEAF BUD): INDICATIONS High blood sugar, supports arteries. If pregnant or breastfeeding, ask a healthcare professional before use.",
+    "trace": [
+      "D0009 | DRUG: ABSINTHIUM, CENCHRIS CONTORTRIX, IGNATIA AMARA, MYGALE | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0010 | DRUG: ACER CAMPESTRE LEAF BUD | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["indications_and_usage", "warnings", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+  "T5-008": {
+    "qid": "T5-008",
+    "question": "Compare the lip care indications and sun protection claims of Dimethicone / Camphor / Menthol / Phenol versus Dimethicone / Octinoxate / Octisalate.",
+    "answer": "D1748 (DIMETHICONE, CAMPHOR (SYNTHETIC), MENTHOL, AND PHENOL): Temporary relief of pain and itching associated with minor lip irritation or cold sores ; Temporarily protects and helps relieve chapped or cracked lips. The label for D1748 does not mention sunburn or sun protection. D1750 (DIMETHICONE, OCTINOXATE, AND OCTISALATE): Temporarily protects and helps relieve chapped or cracked lips ; Helps prevent sunburn.",
+    "trace": [
+      "D1748 | DRUG: DIMETHICONE, CAMPHOR (SYNTHETIC), MENTHOL, AND PHENOL | SOURCE: normalized_drug_data_chunk_4868-4967.json",
+      "D1750 | DRUG: DIMETHICONE, OCTINOXATE, AND OCTISALATE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+  "T5-009": {
+    "qid": "T5-009",
+    "question": "Compare the indications and pregnancy or breast-feeding advice of Acetaldehyde versus Abelmoschus Moschatus Seed.",
+    "answer": "D0011 (ACETALDEHYDE): Temporary relief of symptoms related to hormone imbalances of insufficiencies in men and women, including low energy, inability to handle stress, trouble focusing, changes in mood, infertility, irregular menstrual cycles (females), and lack of libido. If pregnant or breast-feeding, ask a healthcare professional before use. D0003 (ABELMOSCHUS MOSCHATUS SEED): Relieves sleepiness with excess salivation. If pregnant or breast-feeding, ask a health professional before use.",
+    "trace": [
+      "D0011 | DRUG: ACETALDEHYDE | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0003 | DRUG: ABELMOSCHUS MOSCHATUS SEED | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["indications_and_usage", "warnings", "pregnancy_or_breast_feeding"],
+    "answerable": true
+  },
+
+  "T6-001": {
+    "qid": "T6-001",
+    "question": "Are there any warnings regarding grapefruit juice interactions or eating grapefruit when taking AANAGALLIS TARAXACUM?",
+    "answer": "The FDA label for D0002 (AANAGALLIS TARAXACUM) does not contain information regarding grapefruit juice interactions.",
+    "trace": [
+      "D0002 | DRUG: AANAGALLIS TARAXACUM | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  "T6-002": {
+    "qid": "T6-002",
+    "question": "What dosage adjustments does the FDA label specify for ABIES ALBA LEAFY TWIG in patients with severe renal impairment?",
+    "answer": "The FDA label for D0004 (ABIES ALBA LEAFY TWIG) does not contain information regarding renal impairment dosing adjustments.",
+    "trace": [
+      "D0004 | DRUG: ABIES ALBA LEAFY TWIG | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  "T6-003": {
+    "qid": "T6-003",
+    "question": "Does the FDA label for DIETHYLPROPION HYDROCHLORIDE warn against concurrent alcohol consumption or alcohol interactions?",
+    "answer": "The FDA label for D1734 (DIETHYLPROPION HYDROCHLORIDE) does not contain information regarding alcohol consumption warnings or interactions.",
+    "trace": [
+      "D1734 | DRUG: DIETHYLPROPION HYDROCHLORIDE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  "T6-004": {
+    "qid": "T6-004",
+    "question": "What pregnancy or breast-feeding warnings are listed on the label for BENZGALANTAMINE?",
+    "answer": "The FDA label for D0878 (BENZGALANTAMINE) does not contain information regarding pregnancy or breast-feeding warnings.",
+    "trace": [
+      "D0878 | DRUG: BENZGALANTAMINE | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  "T6-005": {
+    "qid": "T6-005",
+    "question": "Can I wear contact lenses while applying DIFLUPREDNATE eye drops, according to its FDA label?",
+    "answer": "The FDA label for D1737 (DIFLUPREDNATE) does not contain information regarding contact lens wear during application.",
+    "trace": [
+      "D1737 | DRUG: DIFLUPREDNATE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  "T6-006": {
+    "qid": "T6-006",
+    "question": "What instructions does the label for DIFLORASONE DIACETATE give regarding application near the eyes or eyelid dermatoses?",
+    "answer": "The FDA label for D1736 (DIFLORASONE DIACETATE) does not contain information regarding application near the eyes or eyelid dermatoses.",
+    "trace": [
+      "D1736 | DRUG: DIFLORASONE DIACETATE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  "T6-007": {
+    "qid": "T6-007",
+    "question": "Is BEMPEDOIC ACID safe to take during pregnancy, or are there specific warnings for nursing mothers on its label?",
+    "answer": "The FDA label for D0834 (BEMPEDOIC ACID) does not contain information regarding pregnancy or nursing warnings.",
+    "trace": [
+      "D0834 | DRUG: BEMPEDOIC ACID | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  "T6-008": {
+    "qid": "T6-008",
+    "question": "Are there any dietary restrictions or food interaction warnings listed on the label for DICLOFENAC EPOLAMINE patches?",
+    "answer": "The FDA label for D1716 (DICLOFENAC EPOLAMINE) does not contain information regarding dietary restrictions or food interactions.",
+    "trace": [
+      "D1716 | DRUG: DICLOFENAC EPOLAMINE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  "T6-009": {
+    "qid": "T6-009",
+    "question": "Does the FDA label for DHEA (DEHYDROEPIANDROSTERONE) sublingual drops provide instructions on whether to take it with food or on an empty stomach?",
+    "answer": "The FDA label for D1701 (DHEA (DEHYDROEPIANDROSTERONE)) does not contain information regarding taking the medication on an empty stomach or with food.",
+    "trace": [
+      "D1701 | DRUG: DHEA (DEHYDROEPIANDROSTERONE) | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+
+  "T7-001": {
+    "qid": "T7-001",
+    "question": "What are the specific age-based dosing guidelines and maximum 24-hour tablet limits for DIMENHYDRINATE 50MG across adults, children aged 6 to under 12, and children aged 2 to under 6?",
+    "answer": "D1741 (DIMENHYDRINATE 50MG): Adults and children 12 years and over: 1 to 2 tablets every 4-6 hours, do not exceed 8 tablets in 24 hours ; Children 6 to under 12 years: ½ to 1 tablet every 6-8 hours, do not exceed 3 tablets in 24 hours ; Children 2 to under 6 years: ½ tablet every 6-8 hours, do not exceed 1 ½ tablets in 24 hours.",
+    "trace": [
+      "D1741 | DRUG: DIMENHYDRINATE 50MG | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["dosage_and_administration"],
+    "answerable": true
+  },
+  "T7-002": {
+    "qid": "T7-002",
+    "question": "What are the specific multi-step application instructions and drop dispensing rules for DICLOFENAC SODIUM, CAPSAICIN topical solution?",
+    "answer": "D1726 (DICLOFENAC SODIUM, CAPSAICIN): Use the lowest effective dosage for the shortest duration consistent with individual patient treatment goals ; The recommended dose is 40 drops on each painful knee, 4 times a day ; Apply diclofenac sodium topical solution to clean, dry skin ; To avoid spillage, dispense diclofenac sodium topical solution 10 drops at a time either directly onto the knee or first into the hand and then onto the knee ; Spread diclofenac sodium topical solution evenly around front, back and sides of the knee ; Repeat this procedure until 40 drops have been applied and the knee is completely covered with solution.",
+    "trace": [
+      "D1726 | DRUG: DICLOFENAC SODIUM, CAPSAICIN | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["dosage_and_administration"],
+    "answerable": true
+  },
+  "T7-003": {
+    "qid": "T7-003",
+    "question": "What are the age-specific dosing schedules and maximum 24-hour tablet limits for ACETAMINOPHEN 325 MG?",
+    "answer": "D0017 (ACETAMINOPHEN 325 MG): Adults and children 12 years and over: take 2 tablets every 4 to 6 hours while symptoms last; do not take more than 10 tablets in 24 hours, unless directed by a doctor ; Children 6 to under 12 years: take 1 tablet every 4 to 6 hours while symptoms last; do not take more than 5 tablets in 24 hours ; Children under 6 years: ask a doctor.",
+    "trace": [
+      "D0017 | DRUG: ACETAMINOPHEN 325 MG | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["dosage_and_administration"],
+    "answerable": true
+  },
+  "T7-004": {
+    "qid": "T7-004",
+    "question": "What is the recommended application amount and daily frequency for BENZOCAINE AND RESORCINOL in adults and children 12 years and older?",
+    "answer": "D0898 (BENZOCAINE AND RESORCINOL): Adults and children 12 years and older: Apply a finger tip amount (approximately a 1 inch strip) to the affected areas not more than 3 to 4 times daily ; Children under 12 years: Ask a doctor.",
+    "trace": [
+      "D0898 | DRUG: BENZOCAINE AND RESORCINOL | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["dosage_and_administration"],
+    "answerable": true
+  },
+  "T7-005": {
+    "qid": "T7-005",
+    "question": "What are the age-tier sublingual dosing instructions for DIBASIC POTASSIUM PHOSPHATE across adults, children 4 to under 12, and children under 4?",
+    "answer": "D1711 (DIBASIC POTASSIUM PHOSPHATE): Adults and children 12 years and older: 2 pills dissolved under tongue every 4 hours, or as directed by a licensed practitioner ; Children 4 years to under 12 years: 1 pill dissolved under tongue every 4 hours, or as directed by a licensed practitioner ; Children under 4 years: Consult a licensed practitioner.",
+    "trace": [
+      "D1711 | DRUG: DIBASIC POTASSIUM PHOSPHATE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["dosage_and_administration"],
+    "answerable": true
+  },
+  
+  "T8-001": {
+    "qid": "T8-001",
+    "question": "Which topical products help treat diaper rash, and when should they not be used or be stopped?",
+    "answer": "D1706 (DIAPER RASH CREAM): helps treat and prevent diaper rash; protects chafed skin due to diaper rash and helps protect skin from wetness. Stop use and ask a doctor if condition worsens, or if symptoms last more than 7 days or clear up and occur again within a few days. D1707 (DIAPER RASH OINTMENT): helps treat and prevent diaper rash; protects and heals chafed and irritated skin. Do not use on deep or puncture wounds, animal bites, or serious burns. Stop use if condition worsens, or if symptoms last more than 7 days or clear up and occur again within a few days. D1706 can be used for up to 14 days before seeing a doctor.",
+    "trace": [
+      "D1706 | DRUG: DIAPER RASH CREAM | SOURCE: normalized_drug_data_chunk_4868-4967.json",
+      "D1707 | DRUG: DIAPER RASH OINTMENT | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["indications_and_usage", "do_not_use", "stop_use"],
+    "answerable": true
+  },
+  "T8-002": {
+    "qid": "T8-002",
+    "question": "How many times a day can I apply Xiclofen ointment, and what should I do if it burns?",
+    "answer": "D1729 (DICLOFENAC SODIUM, METHYL SALICYLATE): Apply directly to the skin up to 4 times daily (8.5 g per day). If irritation or a burning sensation occurs during application, stop use and advise your doctor. The label states the ointment is safe for children over 6 years of age.",
+    "trace": [
+      "D1729 | DRUG: DICLOFENAC SODIUM, METHYL SALICYLATE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": ["dosage_and_administration"],
+    "answerable": true
+  },
+  "T8-003": {
+    "qid": "T8-003",
+    "question": "What products treat a cold, and how do oral respiratory cold remedies differ from topical cold sore treatments?",
+    "answer": "D0014 (ACETAMINOPHEN , DIPHENHYDRAMINE HCL,PHENYLEPHRINE HCL): Temporarily relieves these common cold and flu symptoms: cough nasal congestion minor aches and pains sore throat headache. D0899 (BENZOCAINE AND WHITE PETROLATUM): Use temporarily relieves pain, itching and dryness; ; Softens crusts (scabs) associated with • cold sores • fever blisters. D0899 is also recommended for use inside the mouth.",
+    "trace": [
+      "D0014 | DRUG: ACETAMINOPHEN , DIPHENHYDRAMINE HCL,PHENYLEPHRINE HCL | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0899 | DRUG: BENZOCAINE AND WHITE PETROLATUM | SOURCE: normalized_drug_data_chunk_2868-2967.json"
+    ],
+    "sections": ["indications_and_usage"],
+    "answerable": true
+  },
+  "T8-004": {
+    "qid": "T8-004",
+    "question": "Compare the indications and purpose of Acetaminophen 500 mg with Caffeine 65 mg versus Acetaminophen 500 mg.",
+    "answer": "D0021 (ACETAMINOPHEN 500 MG WITH CAFFEINE 65MG): Purpose: Pain reliever/fever reducer. Temporary relief of minor aches and pains due to: headache, muscular aches. D0019 (ACETAMINOPHEN 500 MG): Purpose: Pain reliever/Fever reducer. Temporarily relieves minor aches and pains due to: the common cold, headache, backache, minor pain of arthritis, toothache, muscular aches, premenstrual and menstrual cramps ; Temporarily reduces fever. D0021 can be used for up to 30 days without consulting a doctor.",
+    "trace": [
+      "D0021 | DRUG: ACETAMINOPHEN 500 MG WITH CAFFEINE 65MG | SOURCE: normalized_drug_data_chunk_69-168.json",
+      "D0019 | DRUG: ACETAMINOPHEN 500 MG | SOURCE: normalized_drug_data_chunk_69-168.json"
+    ],
+    "sections": ["indications_and_usage", "purpose"],
+    "answerable": true
+  },
+  "T8-005": {
+    "qid": "T8-005",
+    "question": "Can I wear contact lenses while applying DIFLUPREDNATE eye drops, according to its FDA label?",
+    "answer": "The FDA label for D1737 (DIFLUPREDNATE) does not contain information regarding contact lens wear during application. The label says to remove contact lenses before use and reinsert them after 15 minutes.",
+    "trace": [
+      "D1737 | DRUG: DIFLUPREDNATE | SOURCE: normalized_drug_data_chunk_4868-4967.json"
+    ],
+    "sections": [],
+    "answerable": false
+  },
+  
+  "T3-001": {
+    "qid": "T3-001",
+    "question": "Can I put A and D Ointment on an animal bite or a deep puncture wound?",
+    "answer": "D0001 (A AND D OINTMENT): Do not use on deep or puncture wounds, animal bites, or serious burns. For external use only. When using this product, do not get into eyes.",
+    "trace": ["D0001 | DRUG: A AND D OINTMENT | SOURCE: normalized_drug_data_chunk_69-168.json"],
+    "sections": ["warnings", "do_not_use"],
+    "answerable": true
+  },
+  "T3-002": {
+    "qid": "T3-002",
+    "question": "What should I do if Dial Mountain Fresh antibacterial bar soap gets in my eyes or irritates my skin?",
+    "answer": "D1703 (DIAL MOUNTAIN FRESH ANTIBACTERIAL BAR SOAP): For external use only. Avoid contact with eyes; in case of eye contact, flush with water. Stop using and ask a doctor if irritation or redness develops.",
+    "trace": ["D1703 | DRUG: DIAL MOUNTAIN FRESH ANTIBACTERIAL BAR SOAP | SOURCE: normalized_drug_data_chunk_4868-4967.json"],
+    "sections": ["warnings"],
+    "answerable": true
+  },
+  "T3-003": {
+    "qid": "T3-003",
+    "question": "Is Forticept Analgesic Antiseptic Hydrogel okay for a 1-year-old, and how long can it be used?",
+    "answer": "D0876 (BENZETHONIUM CHLORIDE, LIDOCAINE HYDROCHLORIDE): Do not use on children under 2 years of age unless directed by a doctor; for children under 2, consult a doctor. Discontinue use after 7 days unless directed by a doctor.",
+    "trace": ["D0876 | DRUG: BENZETHONIUM CHLORIDE, LIDOCAINE HYDROCHLORIDE | SOURCE: normalized_drug_data_chunk_2868-2967.json"],
+    "sections": ["do_not_use", "ask_doctor", "stop_use"],
+    "answerable": true
+  },
+  "T3-004": {
+    "qid": "T3-004",
+    "question": "Who should not use DermaWound, and when should I stop using it?",
+    "answer": "D0902 (BENZOCAINE HYDROCHLORIDE): Do not use in the eyes, with methemoglobinemia, or if pregnant or lactating. Stop use and ask a doctor if the condition persists or gets worse, irritation or rash appears, or you need to use the product for more than 1 week.",
+    "trace": ["D0902 | DRUG: BENZOCAINE HYDROCHLORIDE | SOURCE: normalized_drug_data_chunk_2868-2967.json"],
+    "sections": ["do_not_use", "stop_use"],
+    "answerable": true
+  }
+}

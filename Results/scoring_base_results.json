@@ -1,0 +1,127 @@
+# Scoring of QA_baseline_llama3.json
+
+I compared each `llm_answer` to the answer key, and checked the key against the label text in your .txt files where I had it.
+
+**Tag legend:** `[previously wrong, now partial]` marks a score I raised after review. `[previously partial, now correct]` and `[previously correct, now partial]` mark the other score changes made after your review.
+
+## T1 Drug-specific: 0 correct, 3 partially correct, 3 wrong
+| qid | Score | Why |
+|---|---|---|
+| 001 | wrong | Says "avoid the product" and invents a quote. The label says ask a professional and avoid large amounts on raw skin. |
+| 002 | partially correct | The 4,000 mg liver warning and the condition list are right, but it adds conditions from another drug and misses the pregnancy line. |
+| 003 | wrong | Retrieved the wrong drug and refused to answer. |
+| 004 | wrong | Retrieved a benzoyl peroxide kit instead of benzyl alcohol. |
+| 005 | partially correct | "Cloudy" and "72 hours" are right, but it came from a different eye drop. |
+| 006 | partially correct | "Rectal use only" is right. The condition rules are wrong, and it misses the bleeding warning. |
+
+## T2 Symptom + safety: 2 correct, 4 partially correct, 2 wrong
+| qid | Score | Why |
+|---|---|---|
+| 001 | correct `[previously partial, now correct]` | Names both pain relievers (ibuprofen, acetaminophen) and gives the pregnancy advice for each. The ibuprofen "20 weeks or later" warning is real label wording. The extra liver warning is unnecessary but true. |
+| 002 | wrong | Gave a homeopathic tobacco product, not dimenhydrinate or bismuth. |
+| 003 | correct | Eczema use and the diaper rash warning match the key. |
+| 004 | partially correct | Kidney warning is right, but it says there is no mineral-diet warning, which the key contradicts. |
+| 005 | wrong | Retrieved a saline spray and said there are no warnings. |
+| 006 | partially correct | The stop-use rule is right, but it names a "15% zinc oxide" product that isn't in your data. It also misses the ointment's do-not-use rule. |
+| 007 | partially correct `[previously correct, now partial]` | Kidney and skin warnings match, but the question asks "what products" and it gives only one (Dove Men Care Sensitive Shield). It names neither D0198 nor D0210 from the key. |
+| 008 | partially correct | Hemorrhoid use and pregnancy advice are right, but the child rule is "under 12" instead of "under 2". |
+
+## T3 Brand: 6 correct, 2 partially correct, 1 wrong
+| qid | Score | Why |
+|---|---|---|
+| 001 | correct | Right conclusion: don't use on animal bites or deep wounds. |
+| 002 | correct | Matches the key. |
+| 003 | partially correct | "Not for under 2" is right, but it says no duration limit exists, when the label says 7 days. |
+| 004 | wrong | Answered for povidone-iodine, the wrong drug. |
+| 005 | correct | Matches the key. |
+| 006 | partially correct | "No" is right, but it cites the wrong rule ("under 12" instead of "under 2"). |
+| 007 | correct | Matches the key. |
+| 008 | correct | Matches the key. It also adds an aspiration warning that isn't in your D1710 text (see flags). |
+| 009 | correct | Matches the key. |
+
+## T4 Ambiguous: 0 correct, 8 partially correct, 1 wrong
+In most of these it covers only one meaning of the word.
+| qid | Score | Why |
+|---|---|---|
+| 001 | partially correct `[previously wrong, now partial]` | Correctly identifies the cold sore meaning and explains how it differs from a respiratory cold. It misses the cold-symptom product. Same pattern as T4-002, so "wrong" was inconsistent. |
+| 002 | partially correct | Covers the skin burn only, and sends heartburn to a doctor. |
+| 003 | partially correct `[previously wrong, now partial]` | Covers both throat and mouth soreness using a different label than the key, and nothing in your files contradicts it. Weak because it says there's no difference between the two. |
+| 004 | partially correct | Menstrual cramps only. |
+| 005 | partially correct | Underarm only. |
+| 006 | wrong | Gives one petrolatum figure and doesn't separate lips from body skin. |
+| 007 | partially correct | Sinus pressure only. |
+| 008 | partially correct | Gets "drying weather" but misses the non-drying cleanser. |
+| 009 | partially correct | Hand sanitizer only. |
+
+## T5 Comparison: 0 correct, 5 partially correct, 4 wrong
+Usually only one of the two drugs was retrieved.
+| qid | Score | Why |
+|---|---|---|
+| 001 | partially correct | Only the first drug is covered, and its stop-use list actually comes from warnings. |
+| 002 | wrong | Says the methemoglobinemia warning is present in both products. D0857 (benzalkonium + lidocaine) has none; only D0852 (benzocaine) does. The model never retrieved the lidocaine label and invented the comparison. The whole question depends on this difference, so a false claim makes it wrong. |
+| 003 | partially correct | Diclofenac limits are right (from a sibling label), but the second drug is missing. |
+| 004 | partially correct | Only the caffeine product is covered. |
+| 005 | wrong | Refused to answer. |
+| 006 | wrong | Falsely says benzalkonium chloride is only a handwashing soap and that no stop-use triggers exist. Missing the D0838 spray directions (1 to 3 times daily, sterile bandage, not under 12), its stop-use rule, and the D0839 72-hour rule. Only the handwash directions are correct. |
+| 007 | partially correct | Acer only. |
+| 008 | wrong | Wrongly says the camphor/phenol product prevents sunburn, and invents "SPF 30". |
+| 009 | partially correct | Abelmoschus only. |
+
+## T6 Unanswerable: 5 correct, 3 partially correct, 1 wrong
+| qid | Score | Why |
+|---|---|---|
+| 001 | correct | |
+| 002 | correct | |
+| 003 | wrong | Says the label warns about alcohol, but D1734 has no such text (see flags). |
+| 004 | partially correct | Declines, but only because it retrieved the wrong drug. |
+| 005 | partially correct | Declines, but only because it retrieved the wrong drug. |
+| 006 | correct | |
+| 007 | partially correct | Declines, but only because it retrieved the wrong drug. |
+| 008 | correct | |
+| 009 | correct | |
+
+## T8 Citation integrity: 1 correct, 4 partially correct, 0 wrong
+These reuse the earlier answers, so the scores follow them. The made-up sentence sits in the key only, so it tests your support check later.
+| qid | Score |
+|---|---|
+| 001 | partially correct (same as T2-006) |
+| 002 | correct |
+| 003 | partially correct `[previously wrong, now partial]` (follows T4-001) |
+| 004 | partially correct |
+| 005 | partially correct |
+
+## T7 (dropped, but still in the file)
+Remove it. For reference: 001 wrong, 002 wrong, 003 wrong, 004 partially correct, 005 wrong.
+
+## Count summary
+| T | Qs | Correct | Partially correct | Wrong |
+|---|---|---|---|---|
+| T1 | 6 | 0 | 3 | 3 |
+| T2 | 8 | 2 | 4 | 2 |
+| T3 | 9 | 6 | 2 | 1 |
+| T4 | 9 | 0 | 8 | 1 |
+| T5 | 9 | 0 | 5 | 4 |
+| T6 | 9 | 5 | 3 | 1 |
+| T7 (dropped) | 5 | 0 | 1 | 4 |
+| T8 | 5 | 1 | 4 | 0 |
+| **Total** | **60** | **14** | **30** | **16** |
+
+## Flags in the file itself
+- **T6-003 key may be wrong.** The alcohol sentence the LLM quoted matches real diethylpropion label wording, but it is not in your normalized D1734 text. Check the full source before keeping this question.
+- **T3-008:** the aspiration warning is also not in your D1710 text. Check it against the full label, and add it to the key if it's real.
+- **T2-002:** `<fill from data>` is still in the trace. D0955 is not in the files I have.
+- **Counts are uneven.** The file has T1: 6, T2: 8, T3: 9, T4: 9, T5: 9, T6: 9. The plan is 7 each.
+- **T8 is incomplete and overlaps other tests.** It has 5 questions and no T1 item, and it reuses drugs from T2–T6, which breaks the "no redundancy" rule unless you exempt it.
+- **Order.** T3-001 to T3-004 sit at the end of the file, after T8.
+- **Unverified keys.** I couldn't verify these, because their chunk files weren't shared: D0337, D0044, D0909, D0926, D2145, D2265, D0023, D0438, D0370, D0346.
+
+## Main pattern
+Most failures come from retrieval, not generation. The system pulled the wrong drug, or only one of two drugs, and the LLM then answered from the wrong context. This supports your plan: symptom routing, section-aware chunking, and a fix for brand and name matching.
+
+## Changes from the earlier versions
+- T4-001, T4-003, T8-003: wrong → partially correct (tagged above).
+- T2-001: partially correct → correct (your review: it answers the question, and the liver line is true).
+- T2-007: correct → partially correct (your review: only one product given, and not the key products).
+- T5-002 and T5-006 stay wrong. The "borderline" label on T5-006 is removed, and the missing information is now listed.
+- T4 heading: 0/6/3 → 0/8/1. T8 heading: 1/3/1 → 1/4/0.
+- Totals are unchanged (14 / 30 / 16), because the T2 changes cancel out.
