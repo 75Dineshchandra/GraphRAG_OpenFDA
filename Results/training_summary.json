@@ -1,0 +1,17 @@
+{
+  "base_model": "NousResearch/Meta-Llama-3-8B-Instruct",
+  "pipeline_model_name": "llama3:8b",
+  "dataset": "FreedomIntelligence/medical-o1-reasoning-SFT (en)",
+  "n_examples": 3000,
+  "by_tag": {
+    "T1T2": 3000
+  },
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05
+  },
+  "epochs": 2,
+  "lr": 0.0002,
+  "note": "No OpenFDA/DailyMed text in training (leakage rule). T7 not addressed by fine-tuning."
+}
