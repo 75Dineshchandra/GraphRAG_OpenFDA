@@ -327,13 +327,6 @@ Question: *"Can I use Kank-a on my 1-year-old's gums for teething?"*
 
 ## 10. Known issues to fix next
 
-- **Question set:** T2-002 trace still has `<fill from data>` for D0955; T3-008 aspiration warning and T6-003 alcohol line may exist in the full label but not in the normalised text, so check the keys; T8 should be 6 questions (one from each of T1-T6) and not reuse drugs; counts are uneven (plan: 7 per type); T3-001 to T3-004 are out of order in `QA.json`.
-- **T8-005 key** contains a "remove lenses" sentence not in D1737. It acts as the injected test sentence, so keep it out of the normal accuracy score.
-- **V3 junk outputs (T3-009, T5-008):** read `raw_answer`, `prompt_tokens` and `context_chars` for these two before changing anything.
-- **V3 Gap lines despite retrieved text (T1-001, T3-006, T7-005):** check whether the right chunk was in the context (`sources`) or whether the model ignored it.
-- **V3 brand misses (T3-001/003/004):** the alias guards (`ALIAS_MAX`, `DF ≤ 6`) may be too strict for these words; test them with the `TESTS` list.
-- **V3 ambiguity (T4):** compare `llm_split` outputs per T4 question with V2's sub-queries; one-meaning-per-phrase is the key.
-- **Few-shot examples:** example 2 is a two-meaning question like the T4 type. No example drug is in the audit's gold list, but keep the examples frozen and report them.
-- **V4 risks:** see section 6 (format mismatch, no abstention data, truncated targets).
-- **Scoring:** re-grade all versions under one rule so the comparison is fair.
-- **References** in the proposal PDF were written from memory and must be verified before submission.
+- **LM Finetuning** Find possible improvements since the CoT is not good enouugh possibly because of parameters
+
+- **Categorical Improvements** the Arch is performing in all aspects better in few T characteristics and not as much in few. hence imporve them. through segmented architecture improvements.
