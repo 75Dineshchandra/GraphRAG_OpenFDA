@@ -193,11 +193,3 @@ Symbols are used in this section only: ✅ correct, 🟡 partially correct, ❌ 
 
 ---
 
-## 5. Grading caveat (important)
-
-The four score files were written in different sessions and are **not all graded by the same rule**:
-- Same kind of answer got different labels. V1 marked T1-003/005/006 as correct although the pregnancy line was missing, while V2 marked similar answers as partially correct.
-- V1 marked T4-002/008 as partially correct ("both meanings covered"), while V2 marked T4-004/005/006/007 as correct for the same behaviour.
-- V3 was graded after review with the rule "the same answer gets the same score" (for example T5-004 = T8-004), which is closer to V2's strictness than to V1's.
-
-So the V1 versus V3 tie (40.0% strict each) and the V2 gap are partly real and partly grader effect. To get a fair comparison, re-grade all result files with one written rule (for example: correct = every fact in the key present and nothing false; partially correct = some key facts present, nothing false; wrong = key fact missing or a false claim), then recompute section 1.
