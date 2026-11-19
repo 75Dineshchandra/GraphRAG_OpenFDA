@@ -114,11 +114,11 @@ A dedicated test cell checks the merged model **before** packaging. It saves not
 
 ## 8. Final evaluation (V4)
 
-The decisive measurement is the original frozen 60-question GraphRAG audit, re-run with the single change `LLM_MODEL = 'labeltune-8b'` (in the pipeline script / few-shot notebook), and recorded as **V4** alongside Base (23.3%), V1 (40.0%) and V2 (28.3%), V3 strict accuracy, broken down by T-category. For comparability, V4 should be graded under the same rule, ideally in the same session as a re-grade of the earlier versions, since the earlier versions were graded in different sessions with different strictness.
+The decisive measurement is the original frozen 60-question GraphRAG audit, re-run with the single change `LLM_MODEL = 'labeltune-8b'` (in the pipeline script / few-shot notebook), and recorded as **V4** alongside Base (23.3%), V1 (40.0%) and V2 (28.3%) strict accuracy, broken down by T-category. For comparability, V4 should be graded under the same rule, ideally in the same session as a re-grade of the earlier versions, since the earlier versions were graded in different sessions with different strictness.
 
 ## 9. Known limitations
 
-- **T7 (long sections) is not a fine-tuning problem** — it stems from retrieval/embedding coverage and is not addressed by this run.
+- **T7 (long sections) is not a fine-tuning problem** — it stems from retrieval/embedding coverage (883 graph nodes failed to embed in the original build) and is not addressed by this run.
 - Answers can occasionally run long and reach a token cap before printing the closing citation; if this appears in the audit, raise the generation token budget rather than retraining.
 - Two epochs was the chosen setting. Because checkpoints were saved per epoch, adapters from different epoch counts can be merged and audited separately if a comparison is wanted later.
 - The abstention, ambiguity, comparison and citation-integrity behaviours (T4/T5/T6/T8) were deliberately **not** trained synthetically in this run (§2.4); any movement in those categories in V4 comes from the reasoning data alone.

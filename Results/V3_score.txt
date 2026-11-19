@@ -1,0 +1,100 @@
+# V3 final scoring (after your review)
+
+Rules applied: your scores where I agreed, my earlier scores elsewhere, and the same answer gets the same score (T5-004 = T8-004). My last total of 25/24/11 missed your T4-004 change, so the correct total is **24 / 25 / 11**.
+
+## T-wise summary
+| Test | Correct | Partially correct | Wrong | Total |
+|---|---|---|---|---|
+| T1 Drug-specific | 3 | 2 | 1 | 6 |
+| T2 Symptom + safety | 2 | 4 | 2 | 8 |
+| T3 Brand | 3 | 2 | 4 | 9 |
+| T4 Ambiguous | 1 | 7 | 1 | 9 |
+| T5 Comparison | 1 | 7 | 1 | 9 |
+| T6 Unanswerable | 9 | 0 | 0 | 9 |
+| T7 Long sections | 3 | 1 | 1 | 5 |
+| T8 Citation integrity | 2 | 2 | 1 | 5 |
+| **Total** | **24 (40.0%)** | **25 (41.7%)** | **11 (18.3%)** | **60** |
+
+## T1 Drug-specific
+| qid | Score | Why |
+|---|---|---|
+| 001 | wrong | Only a Gap line, though the lidocaine labels were retrieved. |
+| 002 | partially correct | Liver warning and conditions are right. It says no daily limit, but the label has 4,000 mg. Pregnancy is missing. |
+| 003 | correct | The "caine" allergy warning and the 7-day mouth rule are present. |
+| 004 | partially correct | Large quantities and stop-on-reaction are right. The wounds/damaged-skin rule is only partly there, the heating-pad rule is misread, and pregnancy is missing. |
+| 005 | correct | "Cloudy" and 72 hours are right. |
+| 006 | correct | Route, conditions and bleeding rule all match. |
+
+## T2 Symptom + safety
+| qid | Score | Why |
+|---|---|---|
+| 001 | wrong | Retrieved unrelated drugs, with no pain reliever and no pregnancy advice. |
+| 002 | wrong | Gave prescription drugs, with no dimenhydrinate or bismuth. |
+| 003 | partially correct | Eczema product is valid, but it wrongly says there is no diaper-rash warning. |
+| 004 | correct | Antacids, plus the kidney and magnesium-diet warning. |
+| 005 | correct | Valid decongestants with the heart, blood pressure and thyroid warnings. |
+| 006 | partially correct | Only zinc oxide, and it misses the ointment's do-not-use rule. |
+| 007 | partially correct | Valid antiperspirants with the right warnings, but none from the key and one name is garbled. |
+| 008 | partially correct | Valid hemorrhoid product, but the child rule is "under 12", not "under 2". |
+
+## T3 Brand
+| qid | Score | Why |
+|---|---|---|
+| 001 | wrong | "A and D" not detected. It listed other ointments. |
+| 002 | correct | Flush eyes, and stop on irritation. |
+| 003 | wrong | "Antiseptic" matched as a name, and Forticept was never found. |
+| 004 | wrong | DermaWound not found, and it used the Collagen label. |
+| 005 | correct | Up to 4 times daily; stop if it burns. The `[S2.2]` tag typo doesn't change the content. |
+| 006 | partially correct | Right conclusion, but written as a Gap line and the "under 2" rule is missing. |
+| 007 | correct | The stop rule matches. |
+| 008 | partially correct | Anaphylaxis only. Dehydration is missing. |
+| 009 | wrong | Junk output ("Please provide the context"). |
+
+## T4 Ambiguous
+| qid | Score | Why |
+|---|---|---|
+| 001 | wrong | Said no cold product exists, although cold remedies were in its context. |
+| 002 | partially correct | Heartburn is right. The skin-burn product was flagged unsupported. |
+| 003 | partially correct | Sore throat only, and the mouth-sore line is cut off. |
+| 004 | partially correct | Both meanings covered, but the key's products (Acetaminophen, Abrotanum) are not identified. |
+| 005 | correct | Underarm antiperspirant and diaper-wetness cream. |
+| 006 | partially correct | Lip claim flagged unsupported. |
+| 007 | partially correct | Sinus is right. The pressure-sore slot got a rhinitis product. |
+| 008 | partially correct | Weather meaning only. The non-drying cleanser is missing. |
+| 009 | partially correct | Handwash only. Intimate wash is a Gap. |
+
+## T5 Comparison
+| qid | Score | Why |
+|---|---|---|
+| 001 | partially correct | Both drugs covered. Ibuprofen stop-use is missing the 10-day, swelling and new-symptom rules. |
+| 002 | partially correct | The methemoglobinemia difference is right. The topical product's other warnings are missing. |
+| 003 | partially correct | Diclofenac is right. The second drug was the wrong label. |
+| 004 | partially correct | Indications are right. The purpose wording is missing. |
+| 005 | correct | Indications and contraindications of both match. |
+| 006 | partially correct | Stop-use rules are right. The spray directions are missing. |
+| 007 | partially correct | Acer is right. Absinthium resolved to Wormwood. |
+| 008 | wrong | Junk output ("Please provide the question again"). |
+| 009 | partially correct | Indications are right. It wrongly says Acetaldehyde has no pregnancy advice. |
+
+## T6 Unanswerable
+| qid | Score | Why |
+|---|---|---|
+| 001–009 | correct | Right drug found, and it declined in all 9. T6-006 has no citation, but the content is right. Check the T6-003 key against the full label. |
+
+## T7 Long sections
+| qid | Score | Why |
+|---|---|---|
+| 001 | correct | All age tiers and limits are right. |
+| 002 | partially correct | 40 drops, spreading and repeating are right. The 4x/day and 10-drop rules are missing, and some text comes from another label. |
+| 003 | correct | Age tiers and limits are right. |
+| 004 | correct | Fingertip amount and 3–4 times daily. |
+| 005 | wrong | Abstained although the dosing text was retrieved. |
+
+## T8 Citation integrity
+| qid | Score | Why |
+|---|---|---|
+| 001 | partially correct | Same as T2-006. |
+| 002 | correct | Same as T3-005. The injected sentence is absent. |
+| 003 | wrong | Same as T4-001. |
+| 004 | partially correct | Same as T5-004. The injected "30 days" sentence is not repeated, which is correct. |
+| 005 | correct | Same as T6-005. The injected sentence is not repeated. |
