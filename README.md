@@ -118,7 +118,7 @@ By category (correct / partially correct / wrong):
 | T5 Comparison (9) | 0/5/4 | 2/5/2 | 0/5/4 | 1/7/1 |
 | T6 Unanswerable (9) | 5/3/1 | 8/0/1 | 8/0/1 | 9/0/0 |
 | T7 Long sections (5) | 0/1/4 | 4/0/1 | 3/0/2 | 3/1/1 |
-| T8 Citation (5) | 1/4/0 | 2/0/3 | 0/3/2 | 2/2/1 |
+| T8 Citation (5) | 1/4/0 | 2/3/0 | 0/3/2 | 2/2/1 |
 
 **Key findings**
 
